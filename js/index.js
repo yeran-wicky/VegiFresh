@@ -1,4 +1,3 @@
 function gotologin() {
-    window.location.href = "http://localhost/VegiFresh/php/login.php";
+    window.location.href = "http://localhost/VegiFresh/login.php";
 }
-
