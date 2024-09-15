@@ -138,7 +138,7 @@
 
 
         <!-- Featurs Section Start -->
-        <div class="container-fluid featurs py-5">
+        <!-- <div class="container-fluid featurs py-5">
             <div class="container py-5">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Featurs Section End -->
 
 
@@ -550,7 +550,7 @@
 
 
         <!-- Featurs Start -->
-        <div class="container-fluid service py-5">
+        <!-- <div class="container-fluid service py-5">
             <div class="container py-5">
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4">
@@ -594,7 +594,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Featurs End -->
 
 
@@ -722,7 +722,7 @@
 
 
         <!-- Banner Section Start-->
-        <div class="container-fluid banner bg-secondary my-5">
+        <!-- <div class="container-fluid banner bg-secondary my-5">
             <div class="container py-5">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
@@ -747,12 +747,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Banner Section End -->
 
 
         <!-- Bestsaler Product Start -->
-        <div class="container-fluid py-5">
+        <!-- <div class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5" style="max-width: 700px;">
                     <h1 class="display-4">Bestseller Products</h1>
@@ -863,7 +863,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="col-lg-6 col-xl-4">
                         <div class="p-4 rounded bg-light">
                             <div class="row align-items-center">
