@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Dashboard</title>
+        <title>VegiFresh - Item</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -47,9 +47,9 @@
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="adminhome.php" class="nav-item nav-link">Dashboard</a>
-                            <a href="item.php" class="nav-item nav-link active">Item</a>
-                            <a href="customer.php" class="nav-item nav-link">Customer</a>
+                            <a href="#" onclick="gotoadminhome()" class="nav-item nav-link">Dashboard</a>
+                            <a href="#" onclick="gotoitem()" class="nav-item nav-link active">Item</a>
+                            <a href="#" onclick="gotocustomer()" class="nav-item nav-link">Customer</a>
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -59,8 +59,8 @@
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
                             </div> -->
-                            <a href="#" class="nav-item nav-link">Weighting</a>
-                            <a href="contact.html" class="nav-item nav-link">Report</a>
+                            <a href="#" onclick="gotoweighting()" class="nav-item nav-link">Weighting</a>
+                            <a href="#" onclick="gotoreport()" class="nav-item nav-link">Report</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>

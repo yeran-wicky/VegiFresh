@@ -150,7 +150,7 @@
 })(jQuery);
 
 
-////////// My own made javascripts //////////
+////////// My own made part //////////
 
 function gotologin() {
     window.location.href = "http://localhost/VegiFresh/login.php";
@@ -162,6 +162,26 @@ function login(){
 
 function logout(){
     window.location.href = "http://localhost/VegiFresh/index.html";
+}
+
+function gotoadminhome(){
+    window.location.href = "http://localhost/VegiFresh/adminhome.php";
+}
+
+function gotoitem(){
+    window.location.href = "http://localhost/VegiFresh/item.php";
+}
+
+function gotocustomer(){
+    window.location.href = "http://localhost/VegiFresh/customer.php";
+}
+
+function gotoweighting(){
+    window.location.href = "http://localhost/VegiFresh/weighting.php";
+}
+
+function gotoreport(){
+    window.location.href = "http://localhost/VegiFresh/report.php";
 }
 
 

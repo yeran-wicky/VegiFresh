@@ -3,16 +3,30 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Customer</title>
+        <title>Fruitables - Vegetable Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
-        <script type="text/javascript" src="js/index.js"></script>
 
-        <?php
-        include "php/head.php";
-        ?>
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
 
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -29,8 +43,8 @@
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123, Nuwara Eliya, Sri Lanka</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">vegifresh@gmail.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
                     </div>
                     <div class="top-link pe-2">
                         <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
@@ -41,16 +55,16 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="#" onclick="gotoadminhome()" class="nav-item nav-link">Dashboard</a>
-                            <a href="#" onclick="gotoitem()" class="nav-item nav-link">Item</a>
-                            <a href="#" onclick="gotocustomer()" class="nav-item nav-link active">Customer</a>
-                            <!-- <div class="nav-item dropdown">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="cart.html" class="dropdown-item">Cart</a>
@@ -58,9 +72,8 @@
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
-                            </div> -->
-                            <a href="#" onclick="gotoweighting()" class="nav-item nav-link">Weighting</a>
-                            <a href="#" onclick="gotoreport()" class="nav-item nav-link">Report</a>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -96,101 +109,32 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Search End --><br><br><br>
+        <!-- Modal Search End -->
 
 
-        <!-- Hero Start -->
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Privacy Policy</h1>
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <!-- Contact Start -->
         <div class="container-fluid contact py-5">
             <div class="container py-5">
                 <div class="p-5 bg-light rounded">
-                    <div class="row g-4 justify-content-center">
+                    <div class="row g-4">
                         <div class="col-12">
                             <div class="text-center mx-auto" style="max-width: 700px;">
-                                <h1 class="text-primary">Customer</h1>
-                            </div>
-                        </div>
-                        
-                        <div class="col-6">
-                            <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Address">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Tel.No">
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="itmsubmit()">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hero End -->
-
-
-        <!-- Featurs Section Start -->
-        <!-- Featurs Section End -->
-
-
-        <!-- Fruits Shop Start-->
-        <!-- Fruits Shop End-->
-
-
-        <!-- Featurs Start -->
-        <!-- Featurs End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <!-- Vesitable Shop End -->
-
-
-        <!-- Banner Section Start-->
-        <!-- Banner Section End -->
-
-
-        <!-- Bestsaler Product Start -->
-        <!-- Bestsaler Product End -->
-
-
-        <!-- Fact Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>satisfied customers</h4>
-                                <h1>1963</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality of service</h4>
-                                <h1>99%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality certificates</h4>
-                                <h1>33</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Available Products</h4>
-                                <h1>789</h1>
+                                <h1 class="text-primary">VegiFresh</h1>
+                                <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fact Start -->
-
-
-        <!-- Tastimonial Start -->
-        <!-- Tastimonial End -->
+        <!-- Contact End -->
 
 
         <!-- Footer Start -->
@@ -288,5 +232,5 @@
         ?>
 
     </body>
-
+    
 </html>

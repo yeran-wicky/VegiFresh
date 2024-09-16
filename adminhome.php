@@ -47,9 +47,9 @@
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="adminhome.php" class="nav-item nav-link active">Dashboard</a>
-                            <a href="item.php" class="nav-item nav-link">Item</a>
-                            <a href="customer.php" class="nav-item nav-link">Customer</a>
+                            <a href="#" onclick="gotoadminhome()" class="nav-item nav-link active">Dashboard</a>
+                            <a href="#" onclick="gotoitem()" class="nav-item nav-link">Item</a>
+                            <a href="#" onclick="gotocustomer()" class="nav-item nav-link">Customer</a>
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -59,8 +59,8 @@
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
                             </div> -->
-                            <a href="#" class="nav-item nav-link">Weighting</a>
-                            <a href="contact.html" class="nav-item nav-link">Report</a>
+                            <a href="#" onclick="gotoweighting()" class="nav-item nav-link">Weighting</a>
+                            <a href="#" onclick="gotoreport()" class="nav-item nav-link">Report</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -459,12 +459,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
+                            <a class="btn-link" href="#" onclick="gotoadminhome()">Dashboard</a>
+                            <a class="btn-link" href="#" onclick="gotoitem()">Item</a>
+                            <a class="btn-link" href="#" onclick="gotocustomer()">Customer</a>
+                            <a class="btn-link" href="#" onclick="gotoweighting()">Weighting</a>
+                            <a class="btn-link" href="#" onclick="gotoreport()">Report</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
