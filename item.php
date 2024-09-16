@@ -112,7 +112,8 @@
                         
                         <div class="col-6">
                             <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name">
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid"><option value="">Select item</option></select>
+                                <!-- <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name"> -->
                                 <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="itmsubmit()">Submit</button>
                             </form>
