@@ -160,8 +160,20 @@ function login(){
     window.location.href = "http://localhost/VegiFresh/adminhome.php";
 }
 
-function logout(){
+function gotoindex(){
     window.location.href = "http://localhost/VegiFresh/index.html";
+}
+
+function gotoshop(){
+    window.location.href = "http://localhost/VegiFresh/shop.html";
+}
+
+function gotoshopdetail(){
+    window.location.href = "http://localhost/VegiFresh/shop-detail.html";
+}
+
+function gotocontact(){
+    window.location.href = "http://localhost/VegiFresh/contact.html";
 }
 
 function gotoadminhome(){
@@ -188,5 +200,14 @@ function gotoprivacypolicy(){
     window.location.href = "http://localhost/VegiFresh/privacypolicy.php";
 }
 
+function gototermsofuse(){
+    window.location.href = "http://localhost/VegiFresh/termsofuse.php";
+}
 
+function gotoshoppingcart(){
+    window.location.href = "http://localhost/VegiFresh/cart.html";
+}
 
+function gotowishlist(){
+    window.location.href = "http://localhost/VegiFresh/404.html"
+}

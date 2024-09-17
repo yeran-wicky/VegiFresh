@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Privacy Policy</title>
+        <title>Fruitables - Vegetable Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -28,27 +28,28 @@
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123, Nuwara Eliya, Sri Lanka</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">vegifresh@gmail.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
                     </div>
                     <div class="top-link pe-2">
-                        <a href="#" class="text-white" onclick="gotoprivacypolicy()"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white" onclick="gototermsofuse()"><small class="text-white mx-2">Terms of Use</small></a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
                     </div>
                 </div>
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="#" onclick="gotoindex()" class="nav-item nav-link">Home</a>
-                            <a href="#" onclick="gotoshop()" class="nav-item nav-link">Shop</a>
-                            <a href="#" onclick="gotoshopdetail()" class="nav-item nav-link">Shop Detail</a>
-                            <!-- <div class="nav-item dropdown">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="cart.html" class="dropdown-item">Cart</a>
@@ -56,8 +57,8 @@
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
-                            </div> -->
-                            <a href="#" onclick="gotocontact()" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -98,7 +99,7 @@
 
         <!-- Single Page Header start -->
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Privacy Policy</h1>
+            <h1 class="text-center text-white display-6">Terms of Use</h1>
         </div>
         <!-- Single Page Header End -->
 
@@ -112,48 +113,44 @@
                             <div class="text-center mx-auto" style="max-width: 700px;">
                                 <h1 class="text-primary">VegiFresh</h1>
                                 <p class="mb-4">
-                                    VegiFresh is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website and interact with our services.
+                                    These Terms of Use govern your use of [Website Name] (the "Website"), a platform that provides information about and facilitates the purchase and sale of vegetables.
+                                    By accessing or using the Website, you agree to be bound by these Terms.
+                                    If you do not agree to these Terms, please do not use the Website.
                                     
-                                    <h5 class="text-primary">Information We Collect</h5>
-                                    <h6 class="text-warning">We may collect the following types of personal information from you:</h6>
+                                    <h5 class="text-primary">Use of the Website</h5>
+                                    <h6 class="text-warning">You may use the Website for personal, non-commercial purposes only. You agree not to:</h6>
 
-                                    Information you provide: This includes information you voluntarily provide, such as your name, email address, phone number, and shipping address when you place an order or contact us.
-                                    Information automatically collected: When you visit our website, we may automatically collect information about your device, including your IP address, browser type, and operating system. We may also use cookies and similar tracking technologies to collect information about your browsing behavior.   
+                                    Use the Website in any manner that could damage, disable, overburden, or impair the Website or interfere with any other party's use of the Website.
+                                    Use the Website to collect or harvest any information about other users.
+                                    Use the Website to transmit any harmful or offensive material.
+                                    Violate any applicable laws or regulations.
 
-                                    <h5 class="text-primary">How We Use Your Information</h5>
-                                    <h6 class="text-warning">We may use your personal information for the following purposes:</h6>
+                                    <h5 class="text-primary">Intellectual Property</h5>
 
-                                    To process your orders: We use your information to fulfill your orders, including processing payments, shipping your products, and providing customer support.
-                                    To communicate with you: We may use your contact information to send you order confirmations, shipping updates, and other important notifications.
-                                    To improve our website and services: We may use your information to analyze website usage, identify trends, and improve our website and services.
-                                    To comply with legal requirements: We may use your information to comply with applicable laws and regulations.
+                                    All content on the Website, including text, graphics, images, and logos, is the property of [Website Name] or its licensors and is protected by copyright and other intellectual property laws.
+                                    You may not reproduce, modify, distribute, or otherwise use any content from the Website without our prior written permission.
 
-                                    <h5 class="text-primary">Sharing Your Information</h5>
-                                    <h6 class="text-warning">We may share your personal information with third parties, such as:</h6>
+                                    <h5 class="text-primary">Disclaimer of Warranties</h5>
 
-                                    Service providers: We may share your information with third-party service providers who help us operate our website and business, such as payment processors, shipping carriers, and marketing partners.   
-                                    Legal authorities: We may share your information with law enforcement or other government agencies as required by law.
+                                    The Website is provided "as is" without any warranties, express or implied.
+                                    [Website Name] makes no representations or warranties about the accuracy, completeness, or reliability of the content on the Website.
+                                    You use the Website at your own risk.
 
-                                    <h5 class="text-primary">Your Rights</h5>
-                                    <h6 class="text-warning">You may have certain rights regarding your personal information, including the right to:</h6>
+                                    <h5 class="text-primary">Limitation of Liability</h5>
 
-                                    Access your information: You may request access to the personal information we hold about you.
-                                    Correct your information: You may request that we correct any inaccurate or incomplete information we hold about you.   
-                                    Delete your information: You may request that we delete your personal information.
-                                    Object to processing: You may object to the processing of your personal information for certain purposes.
+                                    [Website Name] shall not be liable for any damages, including but not limited to direct, indirect, incidental, special, or consequential damages, arising out of or in connection with your use of the Website.
                                     
-                                    <h5 class="text-primary">Cookies and Tracking Technologies</h5>
-                                    We may use cookies and similar tracking technologies to collect information about your browsing behavior. You can manage your cookie preferences through your browser settings.
+                                    <h5 class="text-primary">Indemnification</h5>
+                                    You agree to indemnify and hold [Website Name] harmless from and against any claims, liabilities, damages, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of the Website or your violation of these Terms.
 
-                                    <h5 class="text-primary">Security</h5>
-                                    We implement reasonable security measures to protect your personal information from unauthorized access, disclosure,
-                                    alteration, and destruction. However, no method of transmission over the internet or electronic storage is completely secure.   
+                                    <h5 class="text-primary">Governing Law</h5>
+                                    These Terms shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of law principles.
 
-                                    <h5 class="text-primary">Changes to This Privacy Policy</h5>
-                                    We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting a notice on our website.   
+                                    <h5 class="text-primary">Changes to Terms</h5>
+                                    [Website Name] may revise these Terms from time to time. By continuing to use the Website after such revisions are effective, you agree to be bound by the revised Terms.
 
                                     <h5 class="text-primary">Contact Us</h5>
-                                    If you have any questions about this Privacy Policy or our practices, please contact us at vegifresh@gmail.com or +94 70 518 6009.
+                                    If you have any questions about these Terms, please contact us at vegifresh@gmail.com or +94 70 518 6009.
                                 </p>
                             </div>
                         </div>
@@ -213,12 +210,12 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
+                            <a class="btn-link" href="#" onclick="gotologin()">My Account</a>
+                            <a class="btn-link" href="#" onclick="gotoshopdetail()">Shop details</a>
+                            <a class="btn-link" href="#" onclick="gotoshoppingcart()">Shopping Cart</a>
+                            <a class="btn-link" href="#" onclick="gotowishlist()">Wishlist</a>
+                            <a class="btn-link" href="#" onclick="gotoorderhistory()">Order History</a>
+                            <a class="btn-link" href="#" onclick="gotointernationalorders()">International Orders</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">

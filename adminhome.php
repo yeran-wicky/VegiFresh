@@ -107,7 +107,7 @@
                         <h4 class="mb-3 text-secondary">Dashboard</h4>
                         <h1 class="mb-3 display-3 text-primary">Hello Yeran !</h1>
                         <div class="position-relative mx-auto">
-                            <br><button type="button" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-150" onclick="logout()">Log Out</button><br>
+                            <br><button type="button" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-150" onclick="gotoindex()">Log Out</button><br>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5">
