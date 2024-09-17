@@ -184,5 +184,9 @@ function gotoreport(){
     window.location.href = "http://localhost/VegiFresh/report.php";
 }
 
+function gotoprivacypolicy(){
+    window.location.href = "http://localhost/VegiFresh/privacypolicy.php";
+}
+
 
 

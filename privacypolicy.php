@@ -73,7 +73,7 @@
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -121,13 +121,56 @@
 
         <!-- Contact Start -->
         <div class="container-fluid contact py-5">
-            <div class="container py-5">
+            <div class="container py-1">
                 <div class="p-5 bg-light rounded">
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="text-center mx-auto" style="max-width: 700px;">
                                 <h1 class="text-primary">VegiFresh</h1>
-                                <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                                <p class="mb-4">
+                                    VegiFresh is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website and interact with our services.
+                                    
+                                    <h5 class="text-primary">Information We Collect</h5>
+                                    <h6 class="text-warning">We may collect the following types of personal information from you:</h6>
+
+                                    Information you provide: This includes information you voluntarily provide, such as your name, email address, phone number, and shipping address when you place an order or contact us.
+                                    Information automatically collected: When you visit our website, we may automatically collect information about your device, including your IP address, browser type, and operating system. We may also use cookies and similar tracking technologies to collect information about your browsing behavior.   
+
+                                    <h5 class="text-primary">How We Use Your Information</h5>
+                                    <h6 class="text-warning">We may use your personal information for the following purposes:</h6>
+
+                                    To process your orders: We use your information to fulfill your orders, including processing payments, shipping your products, and providing customer support.
+                                    To communicate with you: We may use your contact information to send you order confirmations, shipping updates, and other important notifications.
+                                    To improve our website and services: We may use your information to analyze website usage, identify trends, and improve our website and services.
+                                    To comply with legal requirements: We may use your information to comply with applicable laws and regulations.
+
+                                    <h5 class="text-primary">Sharing Your Information</h5>
+                                    <h6 class="text-warning">We may share your personal information with third parties, such as:</h6>
+
+                                    Service providers: We may share your information with third-party service providers who help us operate our website and business, such as payment processors, shipping carriers, and marketing partners.   
+                                    Legal authorities: We may share your information with law enforcement or other government agencies as required by law.
+
+                                    <h5 class="text-primary">Your Rights</h5>
+                                    <h6 class="text-warning">You may have certain rights regarding your personal information, including the right to:</h6>
+
+                                    Access your information: You may request access to the personal information we hold about you.
+                                    Correct your information: You may request that we correct any inaccurate or incomplete information we hold about you.   
+                                    Delete your information: You may request that we delete your personal information.
+                                    Object to processing: You may object to the processing of your personal information for certain purposes.
+                                    
+                                    <h5 class="text-primary">Cookies and Tracking Technologies</h5>
+                                    We may use cookies and similar tracking technologies to collect information about your browsing behavior. You can manage your cookie preferences through your browser settings.
+
+                                    <h5 class="text-primary">Security</h5>
+                                    We implement reasonable security measures to protect your personal information from unauthorized access, disclosure,
+                                    alteration, and destruction. However, no method of transmission over the internet or electronic storage is completely secure.   
+
+                                    <h5 class="text-primary">Changes to This Privacy Policy</h5>
+                                    We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting a notice on our website.   
+
+                                    <h5 class="text-primary">Contact Us</h5>
+                                    If you have any questions about this Privacy Policy or our practices, please contact us at vegifresh@gmail.com or +94 70 518 6009.
+                                </p>
                             </div>
                         </div>
                     </div>
