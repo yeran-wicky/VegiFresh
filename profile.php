@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Privacy Policy</title>
+        <title>VegiFresh - Profile</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -45,7 +45,19 @@
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="#" onclick="goback()" class="nav-item nav-link">Go Back</a>
+                            <a href="#" onclick="gotoindex()" class="nav-item nav-link">Home</a>
+                            <a href="#" onclick="gotoshop()" class="nav-item nav-link">Shop</a>
+                            <a href="#" onclick="gotoshopdetail()" class="nav-item nav-link">Shop Detail</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="cart.html" class="dropdown-item">Cart</a>
+                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div> -->
+                            <a href="#" onclick="gotocontact()" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -86,7 +98,7 @@
 
         <!-- Single Page Header start -->
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Privacy Policy</h1>
+            <h1 class="text-center text-white display-6">Profile</h1>
         </div>
         <!-- Single Page Header End -->
 
@@ -98,51 +110,11 @@
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="text-center mx-auto" style="max-width: 700px;">
-                                <h1 class="text-primary">VegiFresh</h1>
-                                <p class="mb-4">
-                                    VegiFresh is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website and interact with our services.
-                                    
-                                    <h5 class="text-primary">Information We Collect</h5>
-                                    <h6 class="text-warning">We may collect the following types of personal information from you:</h6>
-
-                                    Information you provide: This includes information you voluntarily provide, such as your name, email address, phone number, and shipping address when you place an order or contact us.
-                                    Information automatically collected: When you visit our website, we may automatically collect information about your device, including your IP address, browser type, and operating system. We may also use cookies and similar tracking technologies to collect information about your browsing behavior.   
-
-                                    <h5 class="text-primary">How We Use Your Information</h5>
-                                    <h6 class="text-warning">We may use your personal information for the following purposes:</h6>
-
-                                    To process your orders: We use your information to fulfill your orders, including processing payments, shipping your products, and providing customer support.
-                                    To communicate with you: We may use your contact information to send you order confirmations, shipping updates, and other important notifications.
-                                    To improve our website and services: We may use your information to analyze website usage, identify trends, and improve our website and services.
-                                    To comply with legal requirements: We may use your information to comply with applicable laws and regulations.
-
-                                    <h5 class="text-primary">Sharing Your Information</h5>
-                                    <h6 class="text-warning">We may share your personal information with third parties, such as:</h6>
-
-                                    Service providers: We may share your information with third-party service providers who help us operate our website and business, such as payment processors, shipping carriers, and marketing partners.   
-                                    Legal authorities: We may share your information with law enforcement or other government agencies as required by law.
-
-                                    <h5 class="text-primary">Your Rights</h5>
-                                    <h6 class="text-warning">You may have certain rights regarding your personal information, including the right to:</h6>
-
-                                    Access your information: You may request access to the personal information we hold about you.
-                                    Correct your information: You may request that we correct any inaccurate or incomplete information we hold about you.   
-                                    Delete your information: You may request that we delete your personal information.
-                                    Object to processing: You may object to the processing of your personal information for certain purposes.
-                                    
-                                    <h5 class="text-primary">Cookies and Tracking Technologies</h5>
-                                    We may use cookies and similar tracking technologies to collect information about your browsing behavior. You can manage your cookie preferences through your browser settings.
-
-                                    <h5 class="text-primary">Security</h5>
-                                    We implement reasonable security measures to protect your personal information from unauthorized access, disclosure,
-                                    alteration, and destruction. However, no method of transmission over the internet or electronic storage is completely secure.   
-
-                                    <h5 class="text-primary">Changes to This Privacy Policy</h5>
-                                    We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting a notice on our website.   
-
-                                    <h5 class="text-primary">Contact Us</h5>
-                                    If you have any questions about this Privacy Policy or our practices, please contact us at vegifresh@gmail.com or +94 70 518 6009.
-                                </p>
+                                <h6 class="text-warning">Logged in as</h6>
+                                <h1 class="text-primary">Yeran Wickramaarachchi</h1>
+                                <!-- <br><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#confirmationModal">Get Started</button><br> -->
+                                <!-- <button type="button" class="btn btn-primary border-2 border-secondary py-2 px-3 rounded-pill text-white h-150 data-bs-toggle="modal" data-bs-target="#confirmationModal">Log Out</button> -->
+                                <br><button type="button" class="btn btn-primary border-2 border-secondary py-2 px-3 rounded-pill text-white h-150" data-bs-toggle="modal" data-bs-target="#confirmationModal">Log Out</button><br>
                             </div>
                         </div>
                     </div>
@@ -151,6 +123,24 @@
         </div>
         <!-- Contact End -->
 
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Log Out</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>   
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to log out?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger text-white" id="confirmAction">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">

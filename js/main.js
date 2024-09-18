@@ -152,7 +152,11 @@
 
 ////////// My own made part //////////
 
-function gotologin() {
+function goback(){
+    window.history.back();
+}
+
+function gotologin(){
     window.location.href = "http://localhost/VegiFresh/login.php";
 }
 
@@ -163,6 +167,14 @@ function login(){
 function gotoindex(){
     window.location.href = "http://localhost/VegiFresh/index.html";
 }
+
+$(document).ready(function(){
+    $('#confirmAction').click(function(){
+        window.location.href = "http://localhost/VegiFresh/index.html";
+        console.log('Action confirmed!');
+        $('#confirmationModal').modal('hide');
+    });
+});
 
 function gotoshop(){
     window.location.href = "http://localhost/VegiFresh/shop.html";
@@ -209,5 +221,9 @@ function gotoshoppingcart(){
 }
 
 function gotowishlist(){
-    window.location.href = "http://localhost/VegiFresh/404.html"
+    window.location.href = "http://localhost/VegiFresh/404.html";
+}
+
+function gotoprofile(){
+    window.location.href = "http://localhost/VegiFresh/profile.php";
 }
