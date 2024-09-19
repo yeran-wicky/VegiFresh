@@ -14,7 +14,7 @@
 
 <!-- Font awesome webfonts -->
 <link href="webfonts/fa-brands-400.eot" rel="stylesheet">
-<link href="webfonts/fa-brands-400.svg" rel="stylesheet">
+<link href="webfonts/fa-brands-400.svg" rel="stylesheet"
 <link href="webfonts/fa-brands-400.ttf" rel="stylesheet">
 <link href="webfonts/fa-brands-400.woff" rel="stylesheet">
 <link href="webfonts/fa-duotone-900.ttf" rel="stylesheet">
