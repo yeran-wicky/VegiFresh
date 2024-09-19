@@ -238,10 +238,12 @@ function gotoprofile(){
     window.location.href = "http://localhost/VegiFresh/profile.php";
 }
 
-$(document).click(function() {
-    $('#notsupportModal').modal('show');
-  
-    setTimeout(function() {
-      $('#notsupportModal').modal('hide');
-    }, 2000);
-  });
+function addtocart(){
+    $(document).ready(function() {
+        $('#notsupportModal').modal('show');
+      
+        setTimeout(function() {
+          $('#notsupportModal').modal('hide');
+        }, 2000);
+    });
+}
