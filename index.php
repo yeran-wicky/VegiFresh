@@ -46,8 +46,8 @@
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav">
                             <a href="#" onclick="gotoindex()" class="nav-item nav-link active">Home</a>
-                            <a href="#" onclick="gotoshop()" class="nav-item nav-link active">Shop</a>
-                            <a href="#" onclick="gotocontact()" class="nav-item nav-link active">Contact</a>
+                            <a href="#" onclick="gotoshop()" class="nav-item nav-link">Shop</a>
+                            <a href="#" onclick="gotocontact()" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
                     <div class="me-0">

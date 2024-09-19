@@ -187,7 +187,7 @@ $(document).ready(function(){
 });
 
 function gotoshop(){
-    window.location.href = "http://localhost/VegiFresh/shop.html";
+    window.location.href = "http://localhost/VegiFresh/shop.php";
 }
 
 function gotoshopdetail(){
