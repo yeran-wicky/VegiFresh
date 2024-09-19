@@ -2,7 +2,14 @@
 <link href="css/googlefont.css" rel="stylesheet"> 
 
 <!-- Icon Font Stylesheet -->
-<link rel="stylesheet" href="css/all.min.css"/>
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/sharp-duotone-solid.css">
+<link rel="stylesheet" href="css/sharp-light.css">
+<link rel="stylesheet" href="css/sharp-regular.css">
+<link rel="stylesheet" href="css/sharp-solid.css">
+<link rel="stylesheet" href="css/sharp-thin.css">
+
 <link href="css/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Font awesome webfonts -->
@@ -10,6 +17,14 @@
 <link href="webfonts/fa-brands-400.svg" rel="stylesheet">
 <link href="webfonts/fa-brands-400.ttf" rel="stylesheet">
 <link href="webfonts/fa-brands-400.woff" rel="stylesheet">
+<link href="webfonts/fa-duotone-900.ttf" rel="stylesheet">
+<link href="webfonts/fa-duotone-900.woff2" rel="stylesheet">
+<link href="webfonts/fa-light-300.ttf" rel="stylesheet">
+<link href="webfonts/fa-light-300.woff2" rel="stylesheet">
+<link href="webfonts/fa-sharp-duotone-solid-900.ttf" rel="stylesheet">
+<link href="webfonts/fa-sharp-duotone-solid-900.woff2" rel="stylesheet">
+<link href="webfonts/fa-sharp-light-300.ttf" rel="stylesheet">
+
 <link href="webfonts/fa-brands-400.woff2" rel="stylesheet">
 <link href="webfonts/fa-regular-400.eot" rel="stylesheet">
 <link href="webfonts/fa-regular-400.svg" rel="stylesheet">
