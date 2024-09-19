@@ -3,48 +3,14 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Home</title>
+        <title>VegiFresh - Privacy Policy</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
-        <script type="text/javascript" src="js/index.js"></script>
-        
-        <!-- Google Web Fonts -->
-        <link href="css/googlefont.css" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="css/all.min.css"/>
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Font awesome webfonts -->
-        <link href="webfonts/fa-brands-400.eot" rel="stylesheet">
-        <link href="webfonts/fa-brands-400.svg" rel="stylesheet">
-        <link href="webfonts/fa-brands-400.ttf" rel="stylesheet">
-        <link href="webfonts/fa-brands-400.woff" rel="stylesheet">
-        <link href="webfonts/fa-brands-400.woff2" rel="stylesheet">
-        <link href="webfonts/fa-regular-400.eot" rel="stylesheet">
-        <link href="webfonts/fa-regular-400.svg" rel="stylesheet">
-        <link href="webfonts/fa-regular-400.ttf" rel="stylesheet">
-        <link href="webfonts/fa-regular-400.woff" rel="stylesheet">
-        <link href="webfonts/fa-regular-400.woff2" rel="stylesheet">
-        <link href="webfonts/fa-solid-900.eot" rel="stylesheet">
-        <link href="webfonts/fa-solid-900.svg" rel="stylesheet">
-        <link href="webfonts/fa-solid-900.ttf" rel="stylesheet">
-        <link href="webfonts/fa-solid-900.woff" rel="stylesheet">
-        <link href="webfonts/fa-solid-900.woff2" rel="stylesheet">
-        <link href="webfonts/fa-v4compatibility.ttf" rel="stylesheet">
-        <link href="webfonts/fa-v4compatibility.woff2" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <?php
+        include "php/head.php";
+        ?>
 
     </head>
 
@@ -78,38 +44,26 @@
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
+                        <div class="navbar-nav">
                             <a href="#" onclick="gotoindex()" class="nav-item nav-link active">Home</a>
-                            <a href="shop.html" class="nav-item nav-link">Shop</a>
-                            <!-- <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a> -->
-                            <!-- <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
-                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div> -->
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="#" onclick="gotoshop()" class="nav-item nav-link active">Shop</a>
+                            <a href="#" onclick="gotocontact()" class="nav-item nav-link active">Contact</a>
                         </div>
-                        <div class="d-flex m-3 me-0">
-                            <!-- <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button> -->
-                            <a href="#" onclick="gotologin()" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <!-- <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;"></span> -->
-                            </a>
-                            <a href="#" onclick="gotologin()" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="me-0">
+                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                        </a>
+                        <a href="#" onclick="gotologinpop()" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
                     </div>
                 </nav>
             </div>
         </div>
         <!-- Navbar End -->
 
-        
+
         <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -128,7 +82,6 @@
             </div>
         </div>
         <!-- Modal Search End -->
-
 
         <!-- Hero Start -->
         <div class="container-fluid py-5 mb-5 hero-header">
@@ -1206,11 +1159,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="#" onclick="gotologin()">My Account</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">My Account</a>
                             <a class="btn-link" href="#" onclick="gotoshopdetails()">Shop details</a>
-                            <a class="btn-link" href="#" onclick="gotologin()">Shopping Cart</a>
-                            <a class="btn-link" href="#" onclick="gotologin()">Wishlist</a>
-                            <a class="btn-link" href="#" onclick="gotologin()">Order History</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Shopping Cart</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Wishlist</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Order History</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -1227,6 +1180,22 @@
             </div>
         </div>
         <!-- Footer End -->
+
+        <!--Login alert modal popup-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Alert</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please login to continue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login alert modal popup end-->
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">
@@ -1246,16 +1215,9 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        <!-- JavaScript Libraries -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <?php
+        include "php/foot.php";
+        ?>
     
     </body>
 

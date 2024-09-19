@@ -160,17 +160,27 @@ function gotologin(){
     window.location.href = "http://localhost/VegiFresh/login.php";
 }
 
+function gotologinpop(){
+    $(document).click(function(){
+        $('#exampleModal').modal('show');
+    
+        setTimeout(function(){
+            window.location.href = 'http://localhost/VegiFresh/login.php';
+        }, 2000);
+    });
+}
+
 function login(){
     window.location.href = "http://localhost/VegiFresh/adminhome.php";
 }
 
 function gotoindex(){
-    window.location.href = "http://localhost/VegiFresh/index.html";
+    window.location.href = "http://localhost/VegiFresh/index.php";
 }
 
 $(document).ready(function(){
     $('#confirmAction').click(function(){
-        window.location.href = "http://localhost/VegiFresh/index.html";
+        window.location.href = "http://localhost/VegiFresh/index.php";
         console.log('Action confirmed!');
         $('#confirmationModal').modal('hide');
     });
