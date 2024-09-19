@@ -14,7 +14,7 @@
 
 <!-- Font awesome webfonts -->
 <link href="webfonts/fa-brands-400.eot" rel="stylesheet">
-<link href="webfonts/fa-brands-400.svg" rel="stylesheet"
+<link href="webfonts/fa-brands-400.svg" rel="stylesheet">
 <link href="webfonts/fa-brands-400.ttf" rel="stylesheet">
 <link href="webfonts/fa-brands-400.woff" rel="stylesheet">
 <link href="webfonts/fa-duotone-900.ttf" rel="stylesheet">
@@ -24,6 +24,15 @@
 <link href="webfonts/fa-sharp-duotone-solid-900.ttf" rel="stylesheet">
 <link href="webfonts/fa-sharp-duotone-solid-900.woff2" rel="stylesheet">
 <link href="webfonts/fa-sharp-light-300.ttf" rel="stylesheet">
+<link href="webfonts/fa-sharp-light-300.woff2" rel="stylesheet">
+<link href="webfonts/fa-sharp-regular-400.ttf" rel="stylesheet">
+<link href="webfonts/fa-sharp-regular-400.woff2" rel="stylesheet">
+<link href="webfonts/fa-sharp-solid-900.ttf" rel="stylesheet">
+<link href="webfonts/fa-sharp-solid-900.woff2" rel="stylesheet">
+<link href="webfonts/fa-sharp-thin-100.ttf" rel="stylesheet">
+<link href="webfonts/fa-sharp-thin-100.woff2" rel="stylesheet">
+<link href="webfonts/fa-thin-100.ttf" rel="stylesheet">
+<link href="webfonts/fa-thin-100.woff2" rel="stylesheet">
 
 <link href="webfonts/fa-brands-400.woff2" rel="stylesheet">
 <link href="webfonts/fa-regular-400.eot" rel="stylesheet">
