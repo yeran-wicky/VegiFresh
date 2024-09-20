@@ -195,7 +195,7 @@ function gotoshopdetail(){
 }
 
 function gotocontact(){
-    window.location.href = "http://localhost/VegiFresh/contact.html";
+    window.location.href = "http://localhost/VegiFresh/contact.php";
 }
 
 function gotoadminhome(){

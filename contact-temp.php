@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>VegiFresh - Profile</title>
+        <title>VegiFresh - Contact</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -24,7 +24,7 @@
 
 
         <!-- Navbar start -->
-        <div class="container-fluid fixed-top">
+        <div class="container-fluid fixed-top"></div>
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
@@ -45,18 +45,16 @@
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav">
-                            <a href="#" onclick="gotoadminhome()" class="nav-item nav-link">Dashboard</a>
-                            <a href="#" onclick="gotoitem()" class="nav-item nav-link">Item</a>
-                            <a href="#" onclick="gotocustomer()" class="nav-item nav-link">Customer</a>
-                            <a href="#" onclick="gotoweighting()" class="nav-item nav-link">Weighting</a>
-                            <a href="#" onclick="gotoreport()" class="nav-item nav-link">Report</a>
+                            <a href="#" onclick="gotoindex()" class="nav-item nav-link">Home</a>
+                            <a href="#" onclick="gotoshop()" class="nav-item nav-link">Shop</a>
+                            <a href="#" onclick="gotocontact()" class="nav-item nav-link active">Contact</a>
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotocart()" class="position-relative me-4 my-auto">
+                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
-                        <a href="#" onclick="gotoprofile()" class="my-auto">
+                        <a href="#" onclick="gotologinpop()" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
                         </a>
                     </div>
@@ -64,47 +62,65 @@
             </div>
         </div>
         <!-- Navbar End -->
-
-
         <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Modal Search End -->
-
-
         <!-- Single Page Header start -->
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Profile</h1>
+            <h1 class="text-center text-white display-6">Contact</h1>
         </div>
         <!-- Single Page Header End -->
 
 
         <!-- Contact Start -->
         <div class="container-fluid contact py-5">
-            <div class="container py-1">
+            <div class="container py-5">
                 <div class="p-5 bg-light rounded">
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="text-center mx-auto" style="max-width: 700px;">
-                                <h6 class="text-warning">Logged in as</h6>
-                                <h1 class="text-primary">Yeran Wickramaarachchi</h1>
-                                <!-- <br><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#confirmationModal">Get Started</button><br> -->
-                                <!-- <button type="button" class="btn btn-primary border-2 border-secondary py-2 px-3 rounded-pill text-white h-150 data-bs-toggle="modal" data-bs-target="#confirmationModal">Log Out</button> -->
-                                <br><button type="button" class="btn btn-primary border-2 border-secondary py-2 px-3 rounded-pill text-white h-150" data-bs-toggle="modal" data-bs-target="#confirmationModal">Log Out</button><br>
+                                <h1 class="text-primary">Get in touch</h1>
+                                <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="h-100 rounded">
+                                <!-- <iframe class="rounded w-100" 
+                                style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <!-- <iframe class="rounded w-100" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63367.842163403686!2d80.73974709166065!3d6.951364420421124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1726801418804!5m2!1sen!2s"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <img class="rounded w-100" style="height: 400px;" src="img/map.png"></img>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-7">
+                            <form action="" class="">
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name">
+                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email">
+                                <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message"></textarea>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Submit</button>
+                            </form>
+                        </div> -->
+                        <div class="col-lg-12">
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p class="mb-2">123 Street New York.USA</p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Mail Us</h4>
+                                    <p class="mb-2">info@example.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-4 rounded bg-white">
+                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <p class="mb-2">(+012) 3456 7890</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,24 +129,6 @@
         </div>
         <!-- Contact End -->
 
-        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="confirmationModalLabel">Log Out</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
-                    </div>
-                    <div class="modal-body">
-                        Are you sure you want to log out?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-danger text-white" id="confirmAction">Confirm</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
@@ -181,12 +179,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">My Account</a>
+                            <a class="btn-link" href="#" onclick="gotoshopdetails()">Shop details</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Shopping Cart</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Wishlist</a>
+                            <a class="btn-link" href="#" onclick="gotologinpop()">Order History</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -204,6 +201,22 @@
         </div>
         <!-- Footer End -->
 
+        <!--Login alert modal popup-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Alert</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please login to continue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login alert modal popup end-->
+
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">
             <div class="container">
@@ -219,13 +232,15 @@
         </div>
         <!-- Copyright End -->
 
+
+
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         <?php
         include "php/foot.php";
         ?>
-
+        
     </body>
-    
+
 </html>
