@@ -40,7 +40,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -95,7 +95,8 @@
                         <h4 class="mb-3 text-secondary">Dashboard</h4>
                         <h1 class="mb-3 display-3 text-primary">Hello Yeran !</h1>
                         <div class="position-relative mx-auto">
-                            <br><button type="button" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-150" onclick="gotoindex()">Log Out</button><br>
+                            <!-- <br><button type="button" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-150" onclick="gotoindex()">Log Out</button><br> -->
+                            <br><button type="button" class="btn btn-primary border-2 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-150" data-bs-toggle="modal" data-bs-target="#confirmationModal">Log Out</button><br>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5">
@@ -396,6 +397,42 @@
             </div>
         </div>
         <!-- Tastimonial End -->
+
+        <!--Logout confirmation modal-->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Log Out</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to log out?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger text-white" id="confirmAction">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Logout confirmation modal end-->
+
+        <!--Cart not supported modal popup-->
+        <div class="modal fade" id="nocartModal" tabindex="-1" role="dialog" aria-labelledby="nocartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="nocartModalLabel">Alert</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This option isn't avaliable to admin users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cart not supported modal popup end-->
 
 
         <!-- Footer Start -->

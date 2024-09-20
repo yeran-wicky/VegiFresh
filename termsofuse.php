@@ -39,7 +39,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -49,12 +49,12 @@
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotocart()" class="position-relative me-4 my-auto">
+                        <!-- <a href="#" onclick="gotocart()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
                         <a href="#" onclick="gotoprofile()" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </nav>
             </div>
@@ -144,7 +144,6 @@
             </div>
         </div>
         <!-- Contact End -->
-
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">

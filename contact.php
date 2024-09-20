@@ -39,7 +39,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
+                        <a href="#" onclick="gotoshop()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
                         <a href="#" onclick="gotologinpop()" class="my-auto">
@@ -104,21 +104,21 @@
                                 <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
                                 <div>
                                     <h4>Address</h4>
-                                    <p class="mb-2">123 Street New York.USA</p>
+                                    <p class="mb-2">123, Nuwara Eliya, Sri Lanka</p>
                                 </div>
                             </div>
                             <div class="d-flex p-4 rounded mb-4 bg-white">
                                 <i class="fas fa-envelope fa-2x text-primary me-4"></i>
                                 <div>
                                     <h4>Mail Us</h4>
-                                    <p class="mb-2">info@example.com</p>
+                                    <p class="mb-2">vegifresh@gmail.com</p>
                                 </div>
                             </div>
                             <div class="d-flex p-4 rounded bg-white">
                                 <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                                 <div>
                                     <h4>Telephone</h4>
-                                    <p class="mb-2">(+012) 3456 7890</p>
+                                    <p class="mb-2">+94 70 518 6009</p>
                                 </div>
                             </div>
                         </div>

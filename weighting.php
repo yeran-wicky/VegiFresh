@@ -40,7 +40,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -181,6 +181,22 @@
 
         <!-- Tastimonial Start -->
         <!-- Tastimonial End -->
+
+        <!--Cart not supported modal popup-->
+        <div class="modal fade" id="nocartModal" tabindex="-1" role="dialog" aria-labelledby="nocartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="nocartModalLabel">Alert</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This option isn't avaliable to admin users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cart not supported modal popup end-->
 
 
         <!-- Footer Start -->

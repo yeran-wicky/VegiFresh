@@ -37,17 +37,17 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav">
-                            <a href="#" onclick="goback()" class="nav-item nav-link active">Go Back</a>
+                            <a href="#" onclick="gotoindex()" class="nav-item nav-link active">Go Back</a>
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
+                        <a href="#" onclick="gotoshop()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
                         <a href="#" onclick="gotologinpop()" class="my-auto">
@@ -81,6 +81,93 @@
                 </div>
             </div>
         </div>
+
+        <!--Login alert modal popup-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Alert</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please login to continue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login alert modal popup end-->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h1 class="text-primary mb-0">VegiFresh</h1>
+                                <p class="text-secondary mb-0">Fresh products</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">VegiFresh emphasizes that your produce is sourced from nearby farms, ensuring freshness and supporting local agriculture.</p>
+                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <a class="btn-link" href="">About Us</a>
+                            <a class="btn-link" href="">Contact Us</a>
+                            <a class="btn-link" href="">Privacy Policy</a>
+                            <a class="btn-link" href="">Terms & Condition</a>
+                            <a class="btn-link" href="">Return Policy</a>
+                            <a class="btn-link" href="">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="#" onclick="gotoadminhome()">Dashboard</a>
+                            <a class="btn-link" href="#" onclick="gotoitem()">Item</a>
+                            <a class="btn-link" href="#" onclick="gotocustomer()">Customer</a>
+                            <a class="btn-link" href="#" onclick="gotoweighting()">Weighting</a>
+                            <a class="btn-link" href="#" onclick="gotoreport()">Report</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 123, Nuwara Eliya, Sri Lanka</p>
+                            <p>Email: vegifresh@gmail.com</p>
+                            <p>Phone: +94 70 518 6009</p>
+                            <p>Payment Accepted</p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">

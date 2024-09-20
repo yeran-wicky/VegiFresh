@@ -38,7 +38,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
+                        <a href="#" onclick="gotoshop()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
                         <a href="#" onclick="gotologinpop()" class="my-auto">
@@ -505,11 +505,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>This feature isn't supported yet.</p>
+                        <p>This feature isn't avaliable yet.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Action not supported modal popup end-->
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">

@@ -39,7 +39,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="#" onclick="gotoindex()" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
+                    <a href="#" class="navbar-brand"><h1 class="text-primary display-6">VegiFresh</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="me-0">
-                        <a href="#" onclick="gotologinpop()" class="position-relative me-4 my-auto">
+                        <a href="#" onclick="gotoshop()" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </a>
                         <a href="#" onclick="gotologinpop()" class="my-auto">
@@ -269,7 +269,7 @@
                             <h1 class="display-3 text-white">Fresh Exotic Veggies</h1>
                             <p class="fw-normal display-3 text-dark mb-4">in Our Centre</p>
                             <p class="mb-4 text-dark">VegiFresh provide healthier food items that are fresher than the ones available in supermarkets!</p>
-                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5" onclick="gotoshop()">BUY</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
