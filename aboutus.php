@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Fruitables - Vegetable Website Template</title>
+        <title>VegiFresh - About Us</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -85,7 +85,7 @@
 
         <!-- Single Page Header start -->
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Terms of Use</h1>
+            <h1 class="text-center text-white display-6">About Us</h1>
         </div>
         <!-- Single Page Header End -->
 
@@ -99,44 +99,24 @@
                             <div class="text-center mx-auto" style="max-width: 700px;">
                                 <h1 class="text-primary">VegiFresh</h1>
                                 <p class="mb-4">
-                                    These Terms of Use govern your use of [Website Name] (the "Website"), a platform that provides information about and facilitates the purchase and sale of vegetables.
-                                    By accessing or using the Website, you agree to be bound by these Terms.
-                                    If you do not agree to these Terms, please do not use the Website.
-                                    
-                                    <h5 class="text-primary">Use of the Website</h5>
-                                    <h6 class="text-warning">You may use the Website for personal, non-commercial purposes only. You agree not to:</h6>
+                                    <h6 class="text-warning">Vision & Mission</h6>
+                                    As our name suggests, at Fresh Fruits Company, our vision is to supply every one of our customers with the freshest, highest quality fruit and vegetables. In a country of expatriates, we aim to source products from every country, so everyone has a taste of home—and the exotic flavours they may have never tried—all with our signature freshness.
+                                    <br><br>
+                                    Add to this our desire to supply you and your customers delicious foods at a price that is as terrific as the taste.
+                                    <br><br>
+                                    We achieve our quality through a rigorous selection of farms and partner suppliers who share our vision of affordable quality, as well as our insistence on operating a short supply chain; a dedicated and ultra-efficient logistics system, and a brand new, state-of-the-art storage facility that underscores our commitment to fast, fresh delivery.
+                                    <br><br>
+                                    At Fresh Fruits, we deliver a whole world of freshness—no matter who, or where you are.
+                                    <br><br>
 
-                                    Use the Website in any manner that could damage, disable, overburden, or impair the Website or interfere with any other party's use of the Website.
-                                    Use the Website to collect or harvest any information about other users.
-                                    Use the Website to transmit any harmful or offensive material.
-                                    Violate any applicable laws or regulations.
-
-                                    <h5 class="text-primary">Intellectual Property</h5>
-
-                                    All content on the Website, including text, graphics, images, and logos, is the property of [Website Name] or its licensors and is protected by copyright and other intellectual property laws.
-                                    You may not reproduce, modify, distribute, or otherwise use any content from the Website without our prior written permission.
-
-                                    <h5 class="text-primary">Disclaimer of Warranties</h5>
-
-                                    The Website is provided "as is" without any warranties, express or implied.
-                                    [Website Name] makes no representations or warranties about the accuracy, completeness, or reliability of the content on the Website.
-                                    You use the Website at your own risk.
-
-                                    <h5 class="text-primary">Limitation of Liability</h5>
-
-                                    [Website Name] shall not be liable for any damages, including but not limited to direct, indirect, incidental, special, or consequential damages, arising out of or in connection with your use of the Website.
-                                    
-                                    <h5 class="text-primary">Indemnification</h5>
-                                    You agree to indemnify and hold [Website Name] harmless from and against any claims, liabilities, damages, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of the Website or your violation of these Terms.
-
-                                    <h5 class="text-primary">Governing Law</h5>
-                                    These Terms shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of law principles.
-
-                                    <h5 class="text-primary">Changes to Terms</h5>
-                                    [Website Name] may revise these Terms from time to time. By continuing to use the Website after such revisions are effective, you agree to be bound by the revised Terms.
-
-                                    <h5 class="text-primary">Contact Us</h5>
-                                    If you have any questions about these Terms, please contact us at vegifresh@gmail.com or +94 70 518 6009.
+                                    <h6 class="text-warning">Core Values</h6>
+                                    At Fresh Fruits, we believe customer satisfaction begins with the earth: the land from which the grower creates fine brands and fine produce that are key to our way of doing business.
+                                    <br><br>
+                                    We believe that integrity, trustworthiness and honesty are integral to who we are as a company, and so, we insist that at every stage of what we do, Fresh Fruits works in partnership with our suppliers,. We insist on ‘Fair Trade’ principles and ethical business practices that support even the smallest grower.
+                                    <br><br>
+                                    We also stipulate that the choice of produce we accept, and its delivery to the supermarket shelf and your customers’ tables, are all done to the highest ethical and quality standards.
+                                    <br><br>
+                                    It is this passion for getting things right and our refusal to compromise on quality that have established our reputation for nearly four decades.
                                 </p>
                             </div>
                         </div>

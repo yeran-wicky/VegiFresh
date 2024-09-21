@@ -33,7 +33,8 @@
                     </div>
                     <div class="top-link pe-2">
                         <a href="#" class="text-white" onclick="gotoprivacypolicy()"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white" onclick="gototermsofuse()"><small class="text-white mx-2">Terms of Use</small></a>
+                        <a href="#" class="text-white" onclick="gototermsofuse()"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white" onclick="gotoaboutus()"><small class="text-white mx-2">About Us</small></a>
                     </div>
                 </div>
             </div>
@@ -161,25 +162,23 @@
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Why People Like us!</h4>
                             <p class="mb-4">VegiFresh emphasizes that your produce is sourced from nearby farms, ensuring freshness and supporting local agriculture.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                            <a href="#" onclick="gotoshop()" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Browse Products</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
+                            <a class="btn-link" href="#" onclick="gotoaboutus()">About Us</a>
+                            <a class="btn-link" href="#" onclick="gotocontact()">Contact Us</a>
+                            <a class="btn-link" href="#" onclick="gotoprivacypolicy()">Privacy Policy</a>
+                            <a class="btn-link" href="#" onclick="gototermsofuse()">Terms of Use</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
                             <a class="btn-link" href="#" onclick="gotologinpop()">My Account</a>
-                            <a class="btn-link" href="#" onclick="gotoshopdetails()">Shop details</a>
+                            <a class="btn-link" href="#" onclick="gotoshop()">Shop</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Shopping Cart</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Wishlist</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Order History</a>

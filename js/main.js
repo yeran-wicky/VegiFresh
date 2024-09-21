@@ -226,6 +226,10 @@ function gototermsofuse(){
     window.location.href = "http://localhost/VegiFresh/termsofuse.php";
 }
 
+function gotoaboutus(){
+    window.location.href = "http://localhost/VegiFresh/aboutus.php";
+}
+
 function gotoshoppingcart(){
     window.location.href = "http://localhost/VegiFresh/cart.html";
 }

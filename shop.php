@@ -32,7 +32,8 @@
                     </div>
                     <div class="top-link pe-2">
                         <a href="#" class="text-white" onclick="gotoprivacypolicy()"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white" onclick="gototermsofuse()"><small class="text-white mx-2">Terms of Use</small></a>
+                        <a href="#" class="text-white" onclick="gototermsofuse()"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white" onclick="gotoaboutus()"><small class="text-white mx-2">About Us</small></a>
                     </div>
                 </div>
             </div>
@@ -175,7 +176,7 @@
                                                 <img src="img/featur-1.jpg" class="img-fluid rounded" alt="">
                                             </div>
                                             <div>
-                                                <h6 class="mb-2">Big Banana</h6>
+                                                <h6 class="mb-2">Broccoli</h6>
                                                 <div class="d-flex mb-2">
                                                     <i class="fa fa-star text-secondary"></i>
                                                     <i class="fa fa-star text-secondary"></i>
@@ -184,8 +185,8 @@
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                                 <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
+                                                    <h5 class="fw-bold me-2">Rs 1100</h5>
+                                                    <h5 class="text-danger text-decoration-line-through">Rs 1250</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +195,7 @@
                                                 <img src="img/featur-2.jpg" class="img-fluid rounded" alt="">
                                             </div>
                                             <div>
-                                                <h6 class="mb-2">Big Banana</h6>
+                                                <h6 class="mb-2">Bell Pepper</h6>
                                                 <div class="d-flex mb-2">
                                                     <i class="fa fa-star text-secondary"></i>
                                                     <i class="fa fa-star text-secondary"></i>
@@ -203,8 +204,8 @@
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                                 <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
+                                                    <h5 class="fw-bold me-2">Rs 950</h5>
+                                                    <h5 class="text-danger text-decoration-line-through">Rs 1370</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -213,7 +214,7 @@
                                                 <img src="img/featur-3.jpg" class="img-fluid rounded" alt="">
                                             </div>
                                             <div>
-                                                <h6 class="mb-2">Big Banana</h6>
+                                                <h6 class="mb-2">Potato</h6>
                                                 <div class="d-flex mb-2">
                                                     <i class="fa fa-star text-secondary"></i>
                                                     <i class="fa fa-star text-secondary"></i>
@@ -222,13 +223,13 @@
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                                 <div class="d-flex mb-2">
-                                                    <h5 class="fw-bold me-2">2.99 $</h5>
-                                                    <h5 class="text-danger text-decoration-line-through">4.11 $</h5>
+                                                    <h5 class="fw-bold me-2">Rs 332</h5>
+                                                    <h5 class="text-danger text-decoration-line-through">Rs 410</h5>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center my-4">
-                                            <a href="#" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Vew More</a>
+                                            <a href="#" onclick="shop()" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Vew More</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -441,25 +442,23 @@
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Why People Like us!</h4>
                             <p class="mb-4">VegiFresh emphasizes that your produce is sourced from nearby farms, ensuring freshness and supporting local agriculture.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                            <a href="#" onclick="gotoshop()" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Browse Products</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
+                            <a class="btn-link" href="#" onclick="gotoaboutus()">About Us</a>
+                            <a class="btn-link" href="#" onclick="gotocontact()">Contact Us</a>
+                            <a class="btn-link" href="#" onclick="gotoprivacypolicy()">Privacy Policy</a>
+                            <a class="btn-link" href="#" onclick="gototermsofuse()">Terms of Use</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
                             <a class="btn-link" href="#" onclick="gotologinpop()">My Account</a>
-                            <a class="btn-link" href="#" onclick="gotoshopdetails()">Shop details</a>
+                            <a class="btn-link" href="#" onclick="gotoshop()">Shop</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Shopping Cart</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Wishlist</a>
                             <a class="btn-link" href="#" onclick="gotologinpop()">Order History</a>
