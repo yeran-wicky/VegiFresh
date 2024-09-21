@@ -115,31 +115,6 @@
         </div>
         <!-- Hero End -->
 
-
-        <!-- Featurs Section Start -->
-        <!-- Featurs Section End -->
-
-
-        <!-- Fruits Shop Start-->
-        <!-- Fruits Shop End-->
-
-
-        <!-- Featurs Start -->
-        <!-- Featurs End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <!-- Vesitable Shop End -->
-
-
-        <!-- Banner Section Start-->
-        <!-- Banner Section End -->
-
-
-        <!-- Bestsaler Product Start -->
-        <!-- Bestsaler Product End -->
-
-
         <!-- Fact Start -->
         <div class="container-fluid py-5">
             <div class="container">
@@ -179,10 +154,6 @@
         </div>
         <!-- Fact Start -->
 
-
-        <!-- Tastimonial Start -->
-        <!-- Tastimonial End -->
-
         <!--Cart not supported modal popup-->
         <div class="modal fade" id="nocartModal" tabindex="-1" role="dialog" aria-labelledby="nocartModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -199,7 +170,6 @@
         </div>
         <!--Cart not supported modal popup end-->
 
-
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
             <div class="container py-5">
@@ -213,8 +183,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
                             </div>
                         </div>
                         <div class="col-lg-3">

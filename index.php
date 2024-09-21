@@ -64,26 +64,6 @@
         </div>
         <!-- Navbar End -->
 
-
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
-
         <!-- Hero Start -->
         <div class="container-fluid py-5 mb-5 hero-header">
             <div class="container py-5">
@@ -176,10 +156,7 @@
             </div>
         </div>
         <!-- Featurs Section End -->
-        <!-- Fruits Shop Start-->
-        <!-- Fruits Shop End-->
-        <!-- Featurs Start -->
-        <!-- Featurs End -->
+
         <!-- Vesitable Shop Start-->
         <div class="container-fluid vesitable py-5">
             <div class="container py-5">
@@ -195,7 +172,6 @@
                             <p>Potatoes are one of the most versatile and widely consumed vegetables in the world.</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rs 332.00 / kg</p>
-                                <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                             </div>
                         </div>
                     </div>
@@ -209,7 +185,6 @@
                             <p>Carrots are a popular root vegetable known for their bright orange color and sweet flavor.</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rs 175.0 / kg</p>
-                                <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                             </div>
                         </div>
                     </div>
@@ -223,7 +198,6 @@
                             <p>Pumpkins are actually a type of fruit. They are large, fruits with a thick, orange rind and a sweet.</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rs 260.0 / kg</p>
-                                <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                             </div>
                         </div>
                     </div>
@@ -237,7 +211,6 @@
                             <p>Broccoli is a vegetable known for its green florets, tough stems and has numerous benefits.</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rs 1100.0 / kg</p>
-                                <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                             </div>
                         </div>
                     </div>
@@ -251,7 +224,6 @@
                             <p>Bell peppers, also known as capsicums, are a type of fruit that are often used as a vegetable.</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rs 950.0 / kg</p>
-                                <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                             </div>
                         </div>
                     </div>
@@ -315,7 +287,6 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">Rs 332.0/=</h4>
-                                    <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                                 </div>
                             </div>
                         </div>
@@ -336,7 +307,6 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">Rs 175.0/=</h4>
-                                    <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                                 </div>
                             </div>
                         </div>
@@ -357,7 +327,6 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">Rs 260.0/=</h4>
-                                    <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                                 </div>
                             </div>
                         </div>
@@ -378,7 +347,6 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">Rs 1100.0/=</h4>
-                                    <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                                 </div>
                             </div>
                         </div>
@@ -399,7 +367,6 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">Rs 950.0/=</h4>
-                                    <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
                                 </div>
                             </div>
                         </div>
@@ -552,8 +519,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
                             </div>
                         </div>
                         <div class="col-lg-3">

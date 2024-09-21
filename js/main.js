@@ -234,10 +234,6 @@ function gotoshoppingcart(){
     window.location.href = "http://localhost/VegiFresh/cart.html";
 }
 
-function gotowishlist(){
-    window.location.href = "http://localhost/VegiFresh/404.html";
-}
-
 function gotoprofile(){
     window.location.href = "http://localhost/VegiFresh/profile.php";
 }

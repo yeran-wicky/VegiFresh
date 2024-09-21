@@ -70,7 +70,6 @@
         </div>
         <!-- Single Page Header End -->
 
-
         <!-- Contact Start -->
         <div class="container-fluid contact py-5">
             <div class="container py-5">
@@ -84,22 +83,9 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="h-100 rounded">
-                                <!-- <iframe class="rounded w-100" 
-                                style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                                <!-- <iframe class="rounded w-100" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63367.842163403686!2d80.73974709166065!3d6.951364420421124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1726801418804!5m2!1sen!2s"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                                 <img class="rounded w-100" style="height: 400px;" src="img/map.png"></img>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-7">
-                            <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name">
-                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email">
-                                <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message"></textarea>
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Submit</button>
-                            </form>
-                        </div> -->
                         <div class="col-lg-12">
                             <div class="d-flex p-4 rounded mb-4 bg-white">
                                 <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
@@ -129,7 +115,6 @@
         </div>
         <!-- Contact End -->
 
-
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
             <div class="container py-5">
@@ -143,8 +128,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
                             </div>
                         </div>
                         <div class="col-lg-3">

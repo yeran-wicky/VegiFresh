@@ -50,12 +50,6 @@
                         </div>
                     </div>
                     <div class="me-0">
-                        <!-- <a href="#" onclick="gotocart()" class="position-relative me-4 my-auto">
-                            <i class="fa fa-shopping-bag fa-2x"></i>
-                        </a>
-                        <a href="#" onclick="gotoprofile()" class="my-auto">
-                            <i class="fas fa-user fa-2x"></i>
-                        </a> -->
                     </div>
                 </nav>
             </div>
@@ -159,8 +153,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -173,44 +165,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">VegiFresh emphasizes that your produce is sourced from nearby farms, ensuring freshness and supporting local agriculture.</p>
-                            <a href="#" onclick="gotoshop()" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Browse Products</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="#" onclick="gotoaboutus()">About Us</a>
-                            <a class="btn-link" href="#" onclick="gotocontact()">Contact Us</a>
-                            <a class="btn-link" href="#" onclick="gotoprivacypolicy()">Privacy Policy</a>
-                            <a class="btn-link" href="#" onclick="gototermsofuse()">Terms & Condition</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="#" onclick="gotologinpop()">My Account</a>
-                            <a class="btn-link" href="#" onclick="gotoshop()">Shop</a>
-                            <a class="btn-link" href="#" onclick="gotologinpop()">Shopping Cart</a>
-                            <a class="btn-link" href="#" onclick="gotologinpop()">Wishlist</a>
-                            <a class="btn-link" href="#" onclick="gotologinpop()">Order History</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 123, Nuwara Eliya, Sri Lanka</p>
-                            <p>Email: vegifresh@gmail.com</p>
-                            <p>Phone: +94 70 518 6009</p>
-                            <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <!-- Footer End -->

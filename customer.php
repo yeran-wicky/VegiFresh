@@ -65,28 +65,7 @@
                 </nav>
             </div>
         </div>
-        <!-- Navbar End -->
-
-
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End --><br><br><br>
-
+        <!-- Navbar End --><br><br><br>
 
         <!-- Hero Start -->
         <div class="container-fluid contact py-5">
@@ -98,7 +77,6 @@
                                 <h1 class="text-primary">Customer</h1>
                             </div>
                         </div>
-                        
                         <div class="col-6">
                             <form action="" class="">
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name">
@@ -112,31 +90,6 @@
             </div>
         </div>
         <!-- Hero End -->
-
-
-        <!-- Featurs Section Start -->
-        <!-- Featurs Section End -->
-
-
-        <!-- Fruits Shop Start-->
-        <!-- Fruits Shop End-->
-
-
-        <!-- Featurs Start -->
-        <!-- Featurs End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <!-- Vesitable Shop End -->
-
-
-        <!-- Banner Section Start-->
-        <!-- Banner Section End -->
-
-
-        <!-- Bestsaler Product Start -->
-        <!-- Bestsaler Product End -->
-
 
         <!-- Fact Start -->
         <div class="container-fluid py-5">
@@ -177,10 +130,6 @@
         </div>
         <!-- Fact Start -->
 
-
-        <!-- Tastimonial Start -->
-        <!-- Tastimonial End -->
-
         <!--Cart not supported modal popup-->
         <div class="modal fade" id="nocartModal" tabindex="-1" role="dialog" aria-labelledby="nocartModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -197,7 +146,6 @@
         </div>
         <!--Cart not supported modal popup end-->
 
-
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
             <div class="container py-5">
@@ -211,8 +159,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <!-- <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button> -->
                             </div>
                         </div>
                         <div class="col-lg-3">
