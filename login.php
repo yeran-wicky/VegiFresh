@@ -60,7 +60,6 @@
         </div>
         <!-- Navbar End --><br><br><br>
 
-
         <div class="container-fluid contact py-5">
             <div class="container py-5">
                 <div class="p-5 bg-light rounded">
@@ -71,16 +70,17 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Username">
-                                <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Password">
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="login()">Login</button>
+                            <form id="loginform" method="post" action="#">
+                                <input type="text" id="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Email" required>
+                                <input type="password" id="pword" class="w-100 form-control border-0 py-3 mb-4" placeholder="Password" required>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Login</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id='formdata'></div>
 
         <!--Login alert modal popup-->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -186,6 +186,33 @@
         <?php
         include "php/foot.php";
         ?>
+
+        <script>
+            wow = new WOW();
+            wow.init();
+
+            $(document).ready(function(e) {
+                $("#loginform").submit(function(e){
+                    e.preventDefault();
+                    var vals =$(':input').map(function(){return $(this).val()}).get();
+
+                     vals = vals.filter(function(value) {
+                        return value !== "";
+                    });
+
+                    alert(vals);
+
+                    $.ajax({
+                        type:'post',
+                        data:{vals:vals},
+                        url:'logdata.php',
+                        success:function(json){
+                            $('#formdata').html(json);
+                        }
+                    })
+                });
+            });
+        </script>
         
     </body>
 
