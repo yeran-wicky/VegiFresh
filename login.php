@@ -196,7 +196,7 @@
                     e.preventDefault();
                     var vals =$(':input').map(function(){return $(this).val()}).get();
 
-                     vals = vals.filter(function(value) {
+                    vals = vals.filter(function(value) {
                         return value !== "";
                     });
 
