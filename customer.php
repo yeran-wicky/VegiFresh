@@ -11,6 +11,7 @@
 
         <?php
         include "php/head.php";
+        include "php/db.php";
         ?>
 
     </head>
@@ -78,12 +79,45 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <form action="" class="">
+                            <form action="" class="" id="customerform">
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name">
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Address">
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Tel.No">
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="itmsubmit()">Submit</button>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit" onclick="savecustomer()">Submit</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="customerdata" class="d-none"></div>
+            </div>
+            <div class="container-fluid contact py-0">
+                <div class="container py-0">
+                    <div class="container p-5 bg-light rounded">
+                        <div class="container py-5 row g-4 justify-content-center">
+                            <?php
+                                $str1 = "SELECT * FROM customer order by cno";
+                                $rs1 = $bdd -> query ($str1) or die ("error on $str1");
+                            ?>
+                            <table class="table table-striped table-bordered" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>cno</th>
+                                        <th>cname</th>
+                                        <th>cadd</th>
+                                        <th>ctel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php while ($row1=$rs1 -> fetch()){ ?>
+                                    <tr>
+                                        <td> <?php echo $row1[0] ?> </td>
+                                        <td> <?php echo $row1[1] ?> </td>
+                                        <td> <?php echo $row1[2] ?> </td>
+                                        <td> <?php echo $row1[3] ?> </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -234,6 +268,37 @@
         <?php
         include "php/foot.php";
         ?>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#table1').DataTable({
+                    dom: 'Bfrtip',
+                    order: [],
+                    pageLength: 10,
+                    buttons: [ 'copy', 'excel', 'pdf','print','colvis'],
+                    responsive: true
+                });
+                $("#customerform").submit(function(e) {
+                    e.preventDefault();
+                    find();
+                });
+            });
+
+            function savecustomer(){
+                var vals = $("input").map(function(){return $(this).val()}).get()
+                // alert("Success");
+                $.ajax({
+                    type:'post',
+                    data:{pvals:vals},
+                    url:'savecustomer.php',
+                    success:function (json){
+                        $("#customerdata").html(json);
+                        location.reload();
+                    }
+                });
+            }
+        </script>
+
 
     </body>
 

@@ -200,7 +200,7 @@
                         return value !== "";
                     });
 
-                    alert(vals);
+                    alert("LOGIN SUCCESS");
 
                     $.ajax({
                         type:'post',

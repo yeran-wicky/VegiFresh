@@ -11,6 +11,7 @@
 
         <?php
         include "php/head.php";
+        include "php/db.php";
         ?>
 
     </head>
@@ -80,9 +81,16 @@
                         <div class="col-6">
                             <form action="" class="" id="itemform">
                                 <!-- <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"><option value="">Select item</option></select> -->
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode"></select>
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode">
+                                    <option>Select product</option>
+                                    <option>Potato</option>
+                                    <option>Carrot</option>
+                                    <option>Pumpkin</option>
+                                    <option>Broccoli</option>
+                                    <option>Bell Pepper</option>
+                                </select>
                                 <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="itmsubmit()">Submit</button>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="saveitem()">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -93,9 +101,28 @@
                 <div class="container py-0">
                     <div class="container p-5 bg-light rounded">
                         <div class="container py-5 row g-4 justify-content-center">
-                            <div class="container">
-                                <div id="tablelist" class="col-md-12"></div>
-                            </div>
+                            <?php
+                                $str1 = "SELECT * FROM item order by icode";
+                                $rs1 = $bdd -> query ($str1) or die ("error on $str1");
+                            ?>
+                            <table class="table table-striped table-bordered" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>icode</th>
+                                        <th>iname</th>
+                                        <th>iprice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php while ($row1=$rs1 -> fetch()){ ?>
+                                    <tr>
+                                        <td> <?php echo $row1[0] ?> </td>
+                                        <td> <?php echo $row1[1] ?> </td>
+                                        <td> <?php echo $row1[2] ?> </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -250,23 +277,51 @@
         ?>
 
         <script type="text/javascript">
+            // $(document).ready(function(){
+            //     showlist()
+            //     $("#itemform").submit(function(e){
+            //         e.preventDefault();
+            //         find();
+            //     });
+            // });
+
+            // function showlist(){
+            //     $.ajax({
+            //         type:'post',
+            //         data:{ },
+            //         url:'itemlist.php',
+            //         success:function(response){
+            //             $("#tablelist").html(response);
+            //         }
+            //     })
+            // }
+
             $(document).ready(function(){
-                showlist()
-                $("#itemform").submit(function(e){
+                $('#table1').DataTable({
+                    dom: 'Bfrtip',
+                    order: [],
+                    pageLength: 10,
+                    buttons: [ 'copy', 'excel', 'pdf','print','colvis'],
+                    responsive: true
+                });
+                $("#itemform").submit(function(e) {
                     e.preventDefault();
                     find();
                 });
             });
 
-            function showlist(){
+            function saveitem(){
+                var vals = $("input").map(function(){return $(this).val()}).get()
+                alert("Success");
                 $.ajax({
                     type:'post',
-                    data:{ },
-                    url:'itemlist.php',
-                    success:function(response){
-                        $("#tablelist").html(response);
+                    data:{pvals:vals},
+                    url:'saveitem.php',
+                    success:function (json){
+                        $("#itemdata").html(json);
+                        // location.reload();
                     }
-                })
+                });
             }
         </script>
         
