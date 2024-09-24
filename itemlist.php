@@ -1,13 +1,4 @@
 <?php
-// include 'php/db.php';
-// // include 'php/data.php';
-// include 'sqlobj.php';
-
-// $myclass = new sqlobj($bdd);
-// $str1 = "SELECT icode, iname FROM item";
-// $sel = $myclass -> selectlist($str1,'icode');
-// echo $sel;
-
 
 include 'php/db.php';
 include 'sqlobj.php';
