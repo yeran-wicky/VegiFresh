@@ -312,14 +312,14 @@
 
             function saveitem(){
                 var vals = $("input").map(function(){return $(this).val()}).get()
-                alert("Success");
+                //alert("Success");
                 $.ajax({
                     type:'post',
                     data:{pvals:vals},
                     url:'saveitem.php',
                     success:function (json){
                         $("#itemdata").html(json);
-                        // location.reload();
+                        location.reload();
                     }
                 });
             }

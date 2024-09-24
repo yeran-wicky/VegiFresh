@@ -314,14 +314,14 @@
 
             function savecollection(){
                 var vals = $("input").map(function(){return $(this).val()}).get()
-                alert("Success");
+                //alert("Success");
                 $.ajax({
                     type:'post',
                     data:{pvals:vals},
                     url:'savecollection.php',
                     success:function (json){
                         $("#collectiondata").html(json);
-                        // location.reload();
+                        location.reload();
                     }
                 });
             }
