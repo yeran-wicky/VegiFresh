@@ -78,18 +78,32 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <form action="" class="">
+                            <form action="" class="" id="itemform">
                                 <!-- <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"><option value="">Select item</option></select> -->
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"></select>
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode"></select>
                                 <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="itmsubmit()">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
+                <div id="itemdata"></div>
+            </div>
+            <div class="container-fluid contact py-0">
+                <div class="container py-0">
+                    <div class="container p-5 bg-light rounded">
+                        <div class="container py-5 row g-4 justify-content-center">
+                            <div class="container">
+                                <div id="tablelist" class="col-md-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Hero End -->
+
+        
 
         <!-- Fact Start -->
         <div class="container-fluid py-5">
@@ -235,6 +249,27 @@
         include "php/foot.php";
         ?>
 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                showlist()
+                $("#itemform").submit(function(e){
+                    e.preventDefault();
+                    find();
+                });
+            });
+
+            function showlist(){
+                $.ajax({
+                    type:'post',
+                    data:{ },
+                    url:'itemlist.php',
+                    success:function(response){
+                        $("#tablelist").html(response);
+                    }
+                })
+            }
+        </script>
+        
     </body>
 
 </html>

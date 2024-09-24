@@ -58,3 +58,9 @@
 
 <!-- Template Stylesheet -->
 <link href="css/style.css" rel="stylesheet">
+
+<!-- Datatable -->
+<link rel="stylesheet" href="DataTables/datatables.min.css">
+<link rel="stylesheet" href="DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="DataTables/Buttons-2.3.6/css/buttons.dataTables.min.css" />
+<link rel="stylesheet" href="DataTables/Responsive-2.3.0/css/responsive.bootstrap4.min.css">
