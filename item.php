@@ -89,13 +89,13 @@
                                     <option>Broccoli</option>
                                     <option>Bell Pepper</option>
                                 </select>
-                                <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="saveitem()">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div id="itemdata" class="d-none></div>
+                <div id="itemdata" class="d-none"></div>
             </div>
             <div class="container-fluid contact py-0">
                 <div class="container py-0">
@@ -312,7 +312,12 @@
 
             function saveitem(){
                 var vals = $("input").map(function(){return $(this).val()}).get()
-                //alert("Success");
+
+                vals = vals.filter(function(value) {
+                    return value !== "";
+                });
+
+                // alert(vals);
                 $.ajax({
                     type:'post',
                     data:{pvals:vals},

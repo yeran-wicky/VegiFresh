@@ -65,13 +65,13 @@
                 </nav>
             </div>
         </div>
-        <!-- Navbar End -->
+        <!-- Navbar End --><br><br><br>
 
 
         <!-- Single Page Header start -->
-        <div class="container-fluid page-header py-5">
+        <!-- <div class="container-fluid page-header py-5">
             <h1 class="text-center text-white display-6">404 Error</h1>
-        </div>
+        </div> -->
         <!-- Single Page Header End -->
 
 

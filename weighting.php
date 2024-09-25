@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collectiondata" class="d-none></div>
+                <div id="collectiondata" class="d-none"></div>
             </div>
             <div class="container-fluid contact py-0">
                 <div class="container py-0">
