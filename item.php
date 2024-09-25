@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="itemdata"></div>
+                <div id="itemdata" class="d-none></div>
             </div>
             <div class="container-fluid contact py-0">
                 <div class="container py-0">
