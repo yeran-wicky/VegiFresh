@@ -102,11 +102,11 @@
                         
                         <div class="col-6">
                             <form action="" class="" id="collectionform">
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid"><option value="">Select customer</option></select>
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid"><option value="">Select item</option></select>
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Weight">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
-                                <input type="date" class="w-100 form-control border-0 py-3 mb-4" placeholder="Date">
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid" required><option value="">Select customer</option></select>
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid" required><option value="">Select item</option></select>
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Weight" required>
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
+                                <input type="date" class="w-100 form-control border-0 py-3 mb-4" placeholder="Date" required>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="savecollection()">Submit</button>
                             </form>
                         </div>

@@ -48,10 +48,10 @@
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav">
                             <a href="#" onclick="gotoadminhome()" class="nav-item nav-link">Dashboard</a>
-                            <a href="#" onclick="gotoitem()" class="nav-item nav-link active">Item</a>
+                            <a href="#" onclick="gotoitem()" class="nav-item nav-link">Item</a>
                             <a href="#" onclick="gotocustomer()" class="nav-item nav-link">Customer</a>
                             <a href="#" onclick="gotoweighting()" class="nav-item nav-link">Weighting</a>
-                            <a href="#" onclick="gotoreport()" class="nav-item nav-link">Report</a>
+                            <a href="#" onclick="gotoreport()" class="nav-item nav-link active">Report</a>
                         </div>
                     </div>
                     <div class="me-0">
@@ -83,7 +83,7 @@
                         <i class="bi bi-exclamation-triangle display-1 text-secondary"></i>
                         <h1 class="display-1">404</h1>
                         <h1 class="mb-4">Page Not Found</h1>
-                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                        <p class="mb-4">We’re sorry, the page you have looked for does not exist yet.</p>
                         <a class="btn border-secondary rounded-pill py-3 px-5" href="#" onclick="gotoadminhome()">Go Back To Dashboard</a>
                     </div>
                 </div>

@@ -80,9 +80,9 @@
                         </div>
                         <div class="col-6">
                             <form action="" class="" id="customerform">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Address">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Tel.No">
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Name" required>
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Address" required>
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Tel.No" required>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit" onclick="savecustomer()">Submit</button>
                             </form>
                         </div>

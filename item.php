@@ -81,7 +81,7 @@
                         <div class="col-6">
                             <form action="" class="" id="itemform">
                                 <!-- <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"><option value="">Select item</option></select> -->
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode">
+                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode" required>
                                     <option>Select product</option>
                                     <option>Potato</option>
                                     <option>Carrot</option>
@@ -89,7 +89,7 @@
                                     <option>Broccoli</option>
                                     <option>Bell Pepper</option>
                                 </select>
-                                <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
+                                <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="saveitem()">Submit</button>
                             </form>
                         </div>
