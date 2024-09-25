@@ -11,9 +11,8 @@
 
         <?php
         include "php/head.php";
-        include "php/db.php";
         ?>
-
+        
     </head>
 
     <body>
@@ -66,126 +65,32 @@
                 </nav>
             </div>
         </div>
-        <!-- Navbar End --><br><br><br>
+        <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <div class="container-fluid contact py-5">
-            <div class="container py-5">
-                <div class="p-5 bg-light rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-12">
-                            <div class="text-center mx-auto" style="max-width: 700px;">
-                                <h1 class="text-primary">Item</h1>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <form action="" class="" id="itemform">
-                                <!-- <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"><option value="">Select item</option></select> -->
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode">
-                                    <option>Select product</option>
-                                    <option>Potato</option>
-                                    <option>Carrot</option>
-                                    <option>Pumpkin</option>
-                                    <option>Broccoli</option>
-                                    <option>Bell Pepper</option>
-                                </select>
-                                <input type="password" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price">
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="saveitem()">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div id="itemdata" class="d-none></div>
-            </div>
-            <div class="container-fluid contact py-0">
-                <div class="container py-0">
-                    <div class="container p-5 bg-light rounded">
-                        <div class="container py-5 row g-4 justify-content-center">
-                            <?php
-                                $str1 = "SELECT * FROM item order by icode";
-                                $rs1 = $bdd -> query ($str1) or die ("error on $str1");
-                            ?>
-                            <table class="table table-striped table-bordered" id="table1">
-                                <thead>
-                                    <tr>
-                                        <th>icode</th>
-                                        <th>iname</th>
-                                        <th>iprice</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php while ($row1=$rs1 -> fetch()){ ?>
-                                    <tr>
-                                        <td> <?php echo $row1[0] ?> </td>
-                                        <td> <?php echo $row1[1] ?> </td>
-                                        <td> <?php echo $row1[2] ?> </td>
-                                    </tr>
-                                    <?php } ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">404 Error</h1>
         </div>
-        <!-- Hero End -->
+        <!-- Single Page Header End -->
 
-        
 
-        <!-- Fact Start -->
+        <!-- 404 Start -->
         <div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>satisfied customers</h4>
-                                <h1>1963</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality of service</h4>
-                                <h1>99%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality certificates</h4>
-                                <h1>33</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Available Products</h4>
-                                <h1>789</h1>
-                            </div>
-                        </div>
+            <div class="container py-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <i class="bi bi-exclamation-triangle display-1 text-secondary"></i>
+                        <h1 class="display-1">404</h1>
+                        <h1 class="mb-4">Page Not Found</h1>
+                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                        <a class="btn border-secondary rounded-pill py-3 px-5" href="#" onclick="gotoadminhome()">Go Back To Dashboard</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fact Start -->
+        <!-- 404 End -->
 
-        <!--Cart not supported modal popup-->
-        <div class="modal fade" id="nocartModal" tabindex="-1" role="dialog" aria-labelledby="nocartModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="nocartModalLabel">Alert</h5>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>This option isn't avaliable to admin users.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Cart not supported modal popup end-->
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
@@ -275,56 +180,7 @@
         <?php
         include "php/foot.php";
         ?>
-
-        <script type="text/javascript">
-            // $(document).ready(function(){
-            //     showlist()
-            //     $("#itemform").submit(function(e){
-            //         e.preventDefault();
-            //         find();
-            //     });
-            // });
-
-            // function showlist(){
-            //     $.ajax({
-            //         type:'post',
-            //         data:{ },
-            //         url:'itemlist.php',
-            //         success:function(response){
-            //             $("#tablelist").html(response);
-            //         }
-            //     })
-            // }
-
-            $(document).ready(function(){
-                $('#table1').DataTable({
-                    dom: 'Bfrtip',
-                    order: [],
-                    pageLength: 10,
-                    buttons: [ 'copy', 'excel', 'pdf','print','colvis'],
-                    responsive: true
-                });
-                $("#itemform").submit(function(e) {
-                    e.preventDefault();
-                    find();
-                });
-            });
-
-            function saveitem(){
-                var vals = $("input").map(function(){return $(this).val()}).get()
-                //alert("Success");
-                $.ajax({
-                    type:'post',
-                    data:{pvals:vals},
-                    url:'saveitem.php',
-                    success:function (json){
-                        $("#itemdata").html(json);
-                        location.reload();
-                    }
-                });
-            }
-        </script>
-        
+    
     </body>
 
 </html>

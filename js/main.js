@@ -215,7 +215,7 @@ function gotoweighting(){
 }
 
 function gotoreport(){
-    window.location.href = "http://localhost/VegiFresh/report.php";
+    window.location.href = "http://localhost/VegiFresh/404.php";
 }
 
 function gotoprivacypolicy(){
