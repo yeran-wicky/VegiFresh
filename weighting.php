@@ -12,6 +12,7 @@
         <?php
         include "php/head.php";
         include "php/db.php";
+        include "php/dbpro.php"
         ?>
 
     </head>
@@ -134,11 +135,10 @@
                                             <?php
                                             if ($result->num_rows > 0){
                                                 while ($row = $result->fetch_assoc()){
-                                                    echo "<option value = '{$row['icode']}-{$row['"
+                                                    echo "<option value = '{$row['icode']}'>{$row['iname']}</option>";
                                                 }
                                             }
-                                            <option value="item1">Item 1</option>
-                                            <option value="item2">Item 2</option>
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="col-4">
