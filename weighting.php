@@ -99,7 +99,6 @@
                                 <h1 class="text-primary">Weighting</h1>
                             </div>
                         </div>
-                        
                         <div class="col-6">
                             <form action="" class="" id="collectionform">
                                 <select class="w-100 form-select border-0 py-3 mb-4" id="pid" name="pid" required><option value="">Select customer</option></select>
@@ -114,7 +113,55 @@
                 </div>
                 <div id="collectiondata" class="d-none"></div>
             </div>
-            <div class="container-fluid contact py-0">
+
+            <div class="container py-5">
+                <div class="p-4 bg-light rounded">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12">
+                            <div class="text-center mx-auto" style="max-width: 700px;"></div>
+                        </div>
+                        <div class="col-6">
+                            <form>
+                                <?php
+                                $sql = "SELECT * FROM item";
+                                $result = $conn->query($sql);
+                                ?>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label for="item">Item:</label>
+                                        <select class="form-select" id="item" name="item">
+                                            <option value="">Select a customer</option>
+                                            <?php
+                                            if ($result->num_rows > 0){
+                                                while ($row = $result->fetch_assoc()){
+                                                    echo "<option value = '{$row['icode']}-{$row['"
+                                                }
+                                            }
+                                            <option value="item1">Item 1</option>
+                                            <option value="item2">Item 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="weight">Weight:</label>
+                                        <input type="text" class="form-control" id="weight" name="weight" placeholder="kg">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="price">Price:</label>
+                                        <input type="text" class="form-control" id="price" name="price">
+                                    </div>
+                                    <!-- <div class="col-3">
+                                        <button type="submit" class="btn btn-primary">Calculate</button>
+                                    </div> -->
+                                </div>
+                            </form><br>
+                            <center><button type="submit" class="btn btn-primary justify-content">SET</button></center>
+                        </div>
+                    </div>
+                </div>
+                <div id="collectiondata" class="d-none"></div>
+            </div>
+
+            <div class="container-fluid contact py-5">
                 <div class="container py-0">
                     <div class="container p-5 bg-light rounded">
                         <div class="container py-5 row g-4 justify-content-center">
