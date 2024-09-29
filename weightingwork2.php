@@ -108,30 +108,52 @@
                                 $sql = "SELECT icode, iname FROM item";
                                 $result = $conn->query($sql);
                                 ?>
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="cno" name="cno" required>
-                                    <option value="">Select customer</option>
-                                    <?php
-                                    if ($result1->num_rows > 0){
-                                        while ($row = $result1->fetch_assoc()){
-                                            echo "<option value = '{$row['cno']}'>{$row['cname']}</option>";
-                                        }
-                                    }
-                                    ?>
-                                </select>
-                                <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode" required>
-                                    <option value="">Select item</option>
-                                    <?php
-                                    if ($result->num_rows > 0){
-                                        while ($row = $result->fetch_assoc()){
-                                            echo "<option value = '{$row['icode']}'>{$row['iname']}</option>";
-                                        }
-                                    }
-                                    ?>
-                                </select>
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" id="weight" name="weight" placeholder="Weight (kg)" required>
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" id="price" name="price" placeholder="Price (Rs)" required>
-                                <button type="submit" class="w-100 btn form-control border-secondary py-3 bg-white text-primary">Submit</button>
-                                    
+                                <div class="row">
+                                    <!-- Customer selection (Add this field) -->
+                                    <div class="col-4">
+                                        <label for="cno">Customer Number:</label>
+                                        <select class="form-select" id="cno" name="cno" required>
+                                            <option value="">Select cus</option>
+                                            <?php
+                                            if ($result1->num_rows > 0){
+                                                while ($row = $result1->fetch_assoc()){
+                                                    echo "<option value = '{$row['cno']}'>{$row['cname']}</option>";
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                        
+                                    </div>
+                                    <!-- Item selection -->
+                                    <div class="col-4">
+                                        <label for="item">Item:</label>
+                                        <select class="form-select" id="icode" name="icode" required>
+                                            <option value="">Select an item</option>
+                                            <?php
+                                            if ($result->num_rows > 0){
+                                                while ($row = $result->fetch_assoc()){
+                                                    echo "<option value = '{$row['icode']}'>{$row['iname']}</option>";
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <!-- Weight -->
+                                    <div class="col-4">
+                                        <label for="weight">Weight:</label>
+                                        <input type="text" class="form-control" id="weight" name="weight" placeholder="kg" required>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="col-4">
+                                        <label for="price">Price:</label>
+                                        <input type="text" class="form-control" id="price" name="price" placeholder="Rs" required>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div class="col-12">
+                                        <br>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
                                 <?php
                                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
