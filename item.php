@@ -12,6 +12,7 @@
         <?php
         include "php/head.php";
         include "php/db.php";
+        include "php/dbpro.php";
         ?>
 
     </head>
@@ -79,18 +80,37 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <form action="" class="" id="itemform">
-                                <!-- <select class="w-100 form-select border-0 py-3 mb-4" id="iname" name="iname"><option value="">Select item</option></select> -->
+                            <form action="" method="post">
+                                <?php
+                                $sql = "SELECT icode, iname FROM item";
+                                $result = $conn->query($sql);
+                                ?>
                                 <select class="w-100 form-select border-0 py-3 mb-4" id="icode" name="icode" required>
                                     <option>Select product</option>
-                                    <option>Potato</option>
-                                    <option>Carrot</option>
-                                    <option>Pumpkin</option>
-                                    <option>Broccoli</option>
-                                    <option>Bell Pepper</option>
+                                    <?php
+                                    if ($result->num_rows > 0) {
+                                        while ($row = $result->fetch_assoc()) {
+                                            echo "<option value='{$row['icode']}'>{$row['iname']}</option>";
+                                        }
+                                    }
+                                    ?>
                                 </select>
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="button" onclick="saveitem()">Submit</button>
+                                <input type="text" name="iprice" class="w-100 form-control border-0 py-3 mb-4" placeholder="Price" required>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary" type="submit">Submit</button>
+
+                                <?php
+                                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                    $icode = $_POST["icode"];
+                                    $iprice = $_POST["iprice"];
+
+                                    $sql = "UPDATE item SET iprice = ? WHERE icode = ?";
+                                    $stmt = $conn->prepare($sql);
+                                    $stmt->bind_param("ds", $iprice, $icode);
+
+                                    $stmt->execute();
+                                    $stmt->close();
+                                }
+                                ?>
                             </form>
                         </div>
                     </div>
@@ -111,6 +131,8 @@
                                         <th>icode</th>
                                         <th>iname</th>
                                         <th>iprice</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -119,6 +141,20 @@
                                         <td> <?php echo $row1[0] ?> </td>
                                         <td> <?php echo $row1[1] ?> </td>
                                         <td> <?php echo $row1[2] ?> </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Edit"
+                                                class="btn form-control border-success py-1 px-0 bg-white text-success button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="edititem(this.id)">
+                                        </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Del"
+                                                class="btn form-control border-danger py-1 px-0 bg-white text-danger button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="deleteitem(this.id)">
+                                        </td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>

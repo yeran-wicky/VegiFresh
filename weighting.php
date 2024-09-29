@@ -108,6 +108,7 @@
                                 $sql = "SELECT icode, iname FROM item";
                                 $result = $conn->query($sql);
                                 ?>
+                                <input type="date" class="w-100 form-control border-0 py-3 mb-4" id="date" name="date" placeholder="Date" required>
                                 <select class="w-100 form-select border-0 py-3 mb-4" id="cno" name="cno" required>
                                     <option value="">Select customer</option>
                                     <?php
@@ -135,11 +136,12 @@
                                 <?php
                                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-                                        $cno = $_POST["cno"];      // Customer number
-                                        $icode = $_POST["icode"];  // Item code
+                                        $cno = $_POST["cno"];
+                                        $icode = $_POST["icode"];
                                         $weight = $_POST["weight"];
                                         $price = $_POST["price"];
-                                        $date = date("Y-m-d");     // Automatically assign today's date
+                                        $date = $_POST["date"];
+                                        // $date = date("Y-m-d");
 
                                         $sql = "INSERT INTO collection (cno, icode, weight, price, date) VALUES (?, ?, ?, ?, ?)";
                                         $stmt = $conn->prepare($sql);
@@ -223,6 +225,8 @@
                                         <th>weight</th>
                                         <th>price</th>
                                         <th>date</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -234,6 +238,20 @@
                                         <td> <?php echo $row1[3] ?> </td>
                                         <td> <?php echo $row1[4] ?> </td>
                                         <td> <?php echo $row1[5] ?> </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Edit"
+                                                class="btn form-control border-success py-1 px-0 bg-white text-success button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="edititem(this.id)">
+                                        </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Del"
+                                                class="btn form-control border-danger py-1 px-0 bg-white text-danger button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="deleteitem(this.id)">
+                                        </td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>

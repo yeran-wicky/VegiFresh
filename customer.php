@@ -105,6 +105,8 @@
                                         <th>cname</th>
                                         <th>cadd</th>
                                         <th>ctel</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -114,6 +116,20 @@
                                         <td> <?php echo $row1[1] ?> </td>
                                         <td> <?php echo $row1[2] ?> </td>
                                         <td> <?php echo $row1[3] ?> </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Edit"
+                                                class="btn form-control border-success py-1 px-0 bg-white text-success button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="edititem(this.id)">
+                                        </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Del"
+                                                class="btn form-control border-danger py-1 px-0 bg-white text-danger button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="deleteitem(this.id)">
+                                        </td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>
