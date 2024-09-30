@@ -200,7 +200,7 @@
                                 </div>
                             </form><br>
                             <div class="d-flex justify-content-center">
-                                <button class="w-25 btn form-control border-secondary py-1 px-1 bg-white text-primary" type="button" onclick="add()" id="additm">Add</button>
+                                <button class="w-25 btn form-control border-secondary py-1 px-1 bg-white text-primary" type="button"">Add</button>
                             </div><br>
                             <div class="d-flex justify-content-center">
                                 <input type="text" id="itemdata1" class="form-control" value="sugar:236:5#tea:1250:0.5#">
@@ -208,14 +208,57 @@
                         </div>
                     </div>
                 </div>
-                <div id="collectiondata"></div>
+                <div id="collectiondata" class="d-none"></div>
             </div>
 
             <div class="container-fluid contact py-5">
                 <div class="container py-0">
                     <div class="container p-5 bg-light rounded">
                         <div class="container py-5 row g-4 justify-content-center">
-                            
+                            <?php
+                                $str1 = "select * FROM collection order by clno";
+                                $rs1 = $bdd -> query ($str1) or die ("error on $str1");
+                            ?>
+                            <table class="table table-striped table-bordered" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>clno</th>
+                                        <th>cno</th>
+                                        <th>icode</th>
+                                        <th>weight</th>
+                                        <th>price</th>
+                                        <th>date</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php while ($row1=$rs1 -> fetch()){ ?>
+                                    <tr>
+                                        <td> <?php echo $row1[0] ?> </td>
+                                        <td> <?php echo $row1[1] ?> </td>
+                                        <td> <?php echo $row1[2] ?> </td>
+                                        <td> <?php echo $row1[3] ?> </td>
+                                        <td> <?php echo $row1[4] ?> </td>
+                                        <td> <?php echo $row1[5] ?> </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Edit"
+                                                class="btn form-control border-success py-1 px-0 bg-white text-success button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="edititem(this.id)">
+                                        </td>
+                                        <td> <input
+                                                type="button"
+                                                value="Del"
+                                                class="btn form-control border-danger py-1 px-0 bg-white text-danger button-column"
+                                                id=<?php echo $row1[0] ?>
+                                                onclick="deleteitem(this.id)">
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -406,17 +449,6 @@
             //         }
             //     });
             // }
-
-            function add(){
-                var vals = $("#itemdata1").val();
-                alert(vals)
-                $.ajax({
-                    type:'post',
-                    data:{pvals:vals},
-                    url:'additem.php',
-                    success:function(json){$("#collectiondata").html(json);}
-                })
-            }
         </script>
 
     </body>
