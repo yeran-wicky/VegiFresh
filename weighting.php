@@ -174,12 +174,12 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <label for="item">Item:</label>
-                                        <select class="form-select" id="item" name="item">
+                                        <select class="form-select" id="itm" name="itm">
                                             <option value="">Select an item</option>
                                             <?php
                                             if ($result->num_rows > 0){
                                                 while ($row = $result->fetch_assoc()){
-                                                    echo "<option value = '{$row['icode']}'>{$row['iname']}</option>";
+                                                    echo "<option value = '{$row['iname']}'>{$row['iname']}</option>";
                                                 }
                                             }
                                             ?>
@@ -187,11 +187,11 @@
                                     </div>
                                     <div class="col-4">
                                         <label for="weight">Weight:</label>
-                                        <input type="text" class="form-control" id="weight" name="weight" placeholder="kg">
+                                        <input type="text" class="form-control" id="wei" name="wei" placeholder="kg">
                                     </div>
                                     <div class="col-4">
                                         <label for="price">Price:</label>
-                                        <input type="text" class="form-control" id="price" name="price" placeholder="Rs">
+                                        <input type="text" class="form-control" id="pri" name="pri" placeholder="Rs">
                                     </div>
                                     <!-- <div class="col-3">
                                         <br>
@@ -203,7 +203,7 @@
                                 <button class="w-25 btn form-control border-secondary py-1 px-1 bg-white text-primary" type="button" onclick="add()" id="additm">Add</button>
                             </div><br>
                             <div class="d-flex justify-content-center">
-                                <input type="text" id="itemdata1" class="form-control" value="sugar:236:5#tea:1250:0.5#">
+                                <input type="text" id="itemdata1" class="form-control" value="">
                             </div>
                         </div>
                     </div>
@@ -407,16 +407,42 @@
             //     });
             // }
 
-            function add(){
-                var vals = $("#itemdata1").val();
-                alert(vals)
-                $.ajax({
-                    type:'post',
-                    data:{pvals:vals},
-                    url:'additem.php',
-                    success:function(json){$("#collectiondata").html(json);}
-                })
+            // function add(){
+            //     var vals = $("#itemdata1").val();
+            //     alert(vals)
+            //     $.ajax({
+            //         type:'post',
+            //         data:{pvals:vals},
+            //         url:'additem.php',
+            //         success:function(json){$("#collectiondata").html(json);}
+            //     })
+            // }
+
+            function add() {
+                // Get the selected item, weight, and price
+                var item = $("#itm").val().trim();
+                var weight = $("#wei").val().trim();
+                var price = $("#pri").val().trim();
+
+                // Check if all fields are filled
+                if (item && weight && price) {
+                    var vals = item + ":" + weight + ":" + price;
+
+                    // Send AJAX request to additem.php
+                    $.ajax({
+                        type: 'post',
+                        data: { pvals: vals },
+                        url: 'additem.php',
+                        success: function (json) {
+                            $("#collectiondata").html(json); // Update the table with the response
+                            $("#item, #weight, #price").val(""); // Clear inputs after adding
+                        }
+                    });
+                } else {
+                    alert("Please fill in all fields.");
+                }
             }
+
         </script>
 
     </body>
