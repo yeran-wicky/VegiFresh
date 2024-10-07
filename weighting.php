@@ -208,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collectiondata"></div>
+                <div id="collectiondata" class="d-none"></div>
             </div>
 
             <div class="container-fluid contact py-5">
@@ -419,23 +419,20 @@
             // }
 
             function add() {
-                // Get the selected item, weight, and price
-                var item = $("#itm").val().trim();
-                var weight = $("#wei").val().trim();
-                var price = $("#pri").val().trim();
+                var item = $("#itm").val();
+                var weight = $("#wei").val();
+                var price = $("#pri").val();
 
-                // Check if all fields are filled
                 if (item && weight && price) {
-                    var vals = item + ":" + weight + ":" + price;
-
-                    // Send AJAX request to additem.php
+                    var vals = $("#itemdata1").val() + item + ":" + weight + ":" + price + "#";
+                    $("#itemdata1").val(vals);
                     $.ajax({
                         type: 'post',
-                        data: { pvals: vals },
+                        data: { pvals: $("#itemdata1").val()},
                         url: 'additem.php',
                         success: function (json) {
-                            $("#collectiondata").html(json); // Update the table with the response
-                            $("#item, #weight, #price").val(""); // Clear inputs after adding
+                            $("#collectiondata").html(json);
+                            $("#item, #weight, #price").val("");
                         }
                     });
                 } else {
