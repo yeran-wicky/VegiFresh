@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <form action="" method="post">  <!-- Add method="post" -->
+                            <form action="" method="post" id="wform">  <!-- Add method="post" -->
                                 <?php
                                 $sql1 = "SELECT cno, cname FROM customer";
                                 $result1 = $conn->query($sql1);
@@ -132,6 +132,44 @@
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" id="weight" name="weight" placeholder="Weight (kg)" required>
                                 <input type="text" class="w-100 form-control border-0 py-3 mb-4" id="price" name="price" placeholder="Price (Rs)" required>
                                 <button type="submit" class="w-100 btn form-control border-secondary py-3 bg-white text-primary">Submit</button>
+                                
+                                <div><br></div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label for="item">Item:</label>
+                                        <select class="form-select" id="itm" name="itm">
+                                            <option value="">Select an item</option>
+                                            <?php
+                                            $sql = "SELECT icode, iname FROM item";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0){
+                                                while ($row = $result->fetch_assoc()){
+                                                    echo "<option value = '{$row['iname']}'>{$row['iname']}</option>";
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="weight">Weight:</label>
+                                        <input type="text" class="form-control" id="wei" name="wei" placeholder="kg">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="price">Price:</label>
+                                        <input type="text" class="form-control" id="pri" name="pri" placeholder="Rs">
+                                    </div>
+                                    <!-- <div class="col-3">
+                                        <br>
+                                        <button type="submit" class="btn btn-primary justify-content">SET</button>
+                                    </div> -->
+                                    <div><br></div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="w-25 btn form-control border-secondary py-1 px-1 bg-white text-primary" type="button" onclick="add()" id="additm">Add</button>
+                                    </div><br>
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" id="itemdata1" class="form-control" value="">
+                                    </div>
+                                </div>
                                     
                                 <?php
                                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -208,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collectiondata" class="d-none"></div>
+                <div id="collectiondata"></div>
             </div>
 
             <div class="container-fluid contact py-5">
@@ -379,6 +417,19 @@
                 $("#collectionform").submit(function(e) {
                     e.preventDefault();
                     find();
+                });
+                $("#wform").submit(function(e){
+                    e.preventDefault();
+                    var vals = $("input").map(function(){return $(this).val();}).get()
+                    alert(vals);
+                    $.ajax({
+                        type:'post',
+                        data:{pvals:vals},
+                        url:'wsave.php',
+                        success:function (json){
+                            $("#collectiondata").html(json);
+                        }
+                    });
                 });
             });
 
