@@ -477,6 +477,7 @@
                 if (item && weight && price) {
                     var vals = $("#itemdata1").val() + item + ":" + weight + ":" + price + "#";
                     $("#itemdata1").val(vals);
+                    e.preventDefault();
                     $.ajax({
                         type: 'post',
                         data: { pvals: $("#itemdata1").val()},
